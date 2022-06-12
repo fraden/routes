@@ -46,8 +46,7 @@ const Home = ({ routes }: RoutesProps) => {
       <header className="py-16 text-center">
         <img src="/logo.svg" alt="Trail Router logotype" className="mx-auto mb-3" />
         <p className="text-forest-darkest">
-          Sweden has tons of trails for hiking &amp; running, but how do you decide where to go? Trail Routes is a curation of the best
-          ones!
+          Here you can see some of my Bosch eBike tours. Due to privacy reasons all trips start on 01/01/2000, 00:00.
         </p>
       </header>
       <section>
@@ -96,8 +95,8 @@ const Home = ({ routes }: RoutesProps) => {
       </section>
       <footer className="text-center text-gray-500">
         A project by{' '}
-        <a href="https://twitter.com/samuelkraft" target="_blank" rel="noopener noreferrer" className="text-forest">
-          @samuelkraft
+        <a href="https://dennisfrankenbach.me/en/index.html" target="_blank" rel="noopener noreferrer" className="text-forest">
+          Dennis Frankenbach
         </a>
       </footer>
     </div>

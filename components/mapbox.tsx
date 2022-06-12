@@ -16,9 +16,9 @@ type MapBoxProps = {
 
 // Initial map
 // TODO: Fit to bounds of all routes
-const lng = 18.274050337530213
-const lat = 59.31711298954641
-const zoom = 11
+const lng = 10.275971
+const lat = 49.468342
+const zoom = 6
 
 const MapBox = ({ routes, initialLng = lng, initialLat = lat }: MapBoxProps): JSX.Element => {
   const [stateMap, setStateMap] = useState(null)
@@ -52,6 +52,50 @@ const MapBox = ({ routes, initialLng = lng, initialLat = lat }: MapBoxProps): JS
     map.addControl(new mapboxgl.FullscreenControl())
 
     map.on('load', () => {
+      map.addSource('mapbox-dem', {
+        type: 'raster-dem',
+        url: 'mapbox://mapbox.mapbox-terrain-dem-v1',
+        tileSize: 512,
+        maxzoom: 14,
+      })
+      // add the DEM source as a terrain layer with exaggerated height
+      map.setTerrain({ source: 'mapbox-dem', exaggeration: 1.5 })
+
+      // add a sky layer that will show when the map is highly pitched
+      map.addLayer({
+        id: 'sky',
+        type: 'sky',
+        paint: {
+          'sky-type': 'atmosphere',
+          'sky-atmosphere-sun': [0.0, 0.0],
+          'sky-atmosphere-sun-intensity': 15,
+        },
+      })
+
+      const { layers } = map.getStyle()
+      const labelLayerId = layers.find(layer => layer.type === 'symbol' && layer.layout['text-field']).id
+
+      map.addLayer(
+        {
+          id: 'add-3d-buildings',
+          source: 'composite',
+          'source-layer': 'building',
+          filter: ['==', 'extrude', 'true'],
+          type: 'fill-extrusion',
+          minzoom: 15,
+          paint: {
+            'fill-extrusion-color': '#aaa',
+
+            // Use an 'interpolate' expression to
+            // add a smooth transition effect to
+            // the buildings as the user zooms in.
+            'fill-extrusion-height': ['interpolate', ['linear'], ['zoom'], 15, 0, 15.05, ['get', 'height']],
+            'fill-extrusion-base': ['interpolate', ['linear'], ['zoom'], 15, 0, 15.05, ['get', 'min_height']],
+            'fill-extrusion-opacity': 0.6,
+          },
+        },
+        labelLayerId,
+      )
       routes.forEach((route: Route) => {
         const {
           slug,
