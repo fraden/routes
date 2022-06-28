@@ -1,7 +1,20 @@
 import { FlexibleXYPlot, AreaSeries, YAxis, HorizontalGridLines, LineSeries } from 'react-vis'
 
-const Chart = ({ coordinates }: { coordinates: Array<{ lat: number; lon: number; elevation: number }> }): JSX.Element => {
-  const data = coordinates.map((x, i) => ({ x: i, y: parseInt(x[2], 10) }))
+const Chart = ({
+  coordinates,
+  type,
+}: {
+  coordinates: Array<{ lat: number; lon: number; elevation: number }>
+  type: string
+}): JSX.Element => {
+  let combinedCoordinates
+  if (type === 'MultiLineString') {
+    combinedCoordinates = [].concat(...coordinates)
+  } else {
+    combinedCoordinates = coordinates
+  }
+
+  const data = combinedCoordinates.map((x, i) => ({ x: i, y: parseInt(x[2], 10) }))
   return (
     <div style={{ height: 120, overflow: 'hidden' }}>
       <FlexibleXYPlot height={150}>

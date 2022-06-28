@@ -7,6 +7,7 @@ type geoJson = {
     }
     geometry: {
       coordinates: Array<any>
+      type: string
     }
   }>
 }

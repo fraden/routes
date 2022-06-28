@@ -138,7 +138,7 @@ const RoutePage = ({ routes }: { routes: Route[] }): JSX.Element | null => {
             </div>
           )}
           <div className="p-2 mb-2 border border-gray-200 rounded">
-            <Chart coordinates={route.gpxGeoJson.features[0].geometry.coordinates} />
+            <Chart coordinates={route.gpxGeoJson.features[0].geometry.coordinates} type={route.gpxGeoJson.features[0].geometry.type} />
           </div>
           <ul className="grid grid-cols-2 grid-rows-2 gap-2 mb-6">
             <Stat type="Distance" value={`${Math.round(route.distance * 10) / 10} km`} centered className={statBoxClassName} />
