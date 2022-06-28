@@ -1,4 +1,4 @@
-This repo contains the source code of [Trail Routes](https://routes.samuelkraft.com)
+This repo contains the source code of [eBike Routes](https://ebike.dennisfrankenbach.me/)
 
 Written with Next.js, Typescript, Tailwind CSS, Mapbox GL, Turf.js
 Parses gpx files and shows them on a map.
