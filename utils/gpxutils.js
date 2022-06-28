@@ -25,10 +25,17 @@ const routes = routeFilePaths.map(filePath => {
 
   // Calculate elevation gain using gpx data
   const { coordinates } = geoJson.features[0].geometry
+  const { type } = geoJson.features[0].geometry
+  let combinedCoordinates
+  if (type === 'MultiLineString') {
+    combinedCoordinates = [].concat(...coordinates)
+  } else {
+    combinedCoordinates = coordinates
+  }
   let elevation = 0
-  coordinates.forEach((coord, index) => {
-    if (index === coordinates.length - 1) return // stop 1 point early since comparison requires 2 points
-    const elevationDifference = coordinates[index + 1][2] - coordinates[index][2]
+  combinedCoordinates.forEach((coord, index) => {
+    if (index === combinedCoordinates.length - 1) return // stop 1 point early since comparison requires 2 points
+    const elevationDifference = combinedCoordinates[index + 1][2] - combinedCoordinates[index][2]
     if (elevationDifference > 0) elevation += elevationDifference
   })
 
