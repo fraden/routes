@@ -1,752 +1,899 @@
 const colors = require('tailwindcss/colors') // eslint-disable-line
 const meta = {
-  Bosch_eBike_Tour_Heilbronn_760766c7: {
+  Heilbronn_971b0595: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#C16D97',
+    color: '#B387E3',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Nordheim_8be60874: {
+  Heilbronn_61b3345d: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#22BC65',
+    color: '#4486E1',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Untereisesheim_93e410a2: {
+  Neckarsulm_0405197e: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#EA9130',
+    color: '#618B10',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Fischen_im_Allgaeu_5d4cd2bf: {
+  Heilbronn_aa2b3c84: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#A84C9F',
+    color: '#23BB4E',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Sonthofen_d84e60aa: {
+  Heilbronn_540e255a: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#86F965',
+    color: '#3076AA',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Sonthofen_f68f9173: {
+  Heilbronn_7f15b4ea: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#9A950A',
+    color: '#AEA889',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Sonthofen_351faa65: {
+  Heilbronn_057b559d: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#398AD2',
+    color: '#406BAD',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Sonthofen_607fd221: {
+  Erlenbach_bcd29385: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#7B3E8B',
+    color: '#DE70C5',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Sonthofen_984a5977: {
+  Heilbronn_ab6bbf79: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#5361E6',
+    color: '#876445',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Sonthofen_a2de92a7: {
+  Heilbronn_e724119e: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#336DA6',
+    color: '#26B1D6',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Sonthofen_7d1ad84c: {
+  Nordheim_86b7b21c: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#A8B646',
+    color: '#00AB3A',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Sonthofen_46e301a9: {
+  Untereisesheim_d41f4b28: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#A2FC73',
+    color: '#990DD9',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Sonthofen_d80757ea: {
+  Fischen_im_Allgaeu_0ac42faa: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#BF0310',
+    color: '#08AAC3',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Bad_Hindelang_529495f5: {
+  Sonthofen_71b62cbc: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#BC14B6',
+    color: '#78B230',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Heilbronn_d2f30c70: {
+  Sonthofen_8381d147: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#8C3724',
+    color: '#0E722D',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Bad_Rappenau_81258571: {
+  Sonthofen_cf136858: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#0D4335',
+    color: '#6F8C96',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Bietigheim_Bissingen_4ae9ccf4: {
+  Sonthofen_00b7c241: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#418918',
+    color: '#655538',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Bad_Wimpfen_903394f1: {
+  Sonthofen_42497fb7: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#51412A',
+    color: '#3B7680',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Sonthofen_a1905b08: {
+  Sonthofen_e1281e73: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#294DC5',
+    color: '#03F41A',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Oberstaufen_0ad97811: {
+  Sonthofen_2abaf6d3: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#A42D77',
+    color: '#627926',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Neunkirchen_9ece992e: {
+  Sonthofen_96230756: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#26DDF9',
+    color: '#0B3610',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Heilbronn_4925a8ac: {
+  Sonthofen_bbe8e765: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#06F421',
+    color: '#C60DE2',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Bad_Rappenau_a8a509a8: {
+  Bad_Hindelang_f3551bac: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#E4F789',
+    color: '#28E2F5',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Heilbronn_75864400: {
+  Heilbronn_740c3f18: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#EF871E',
+    color: '#7DBF78',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Heilbronn_6f55debd: {
+  Bad_Rappenau_136048a9: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#9D414E',
+    color: '#F53BCC',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Heilbronn_361b26b3: {
+  Bietigheim_Bissingen_5d0010e9: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#872065',
+    color: '#7F1BD5',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Sonthofen_ea3ac718: {
+  Bad_Wimpfen_b4ca6880: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#65EB72',
+    color: '#526CFB',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Bad_Hindelang_282e6ab1: {
+  Sonthofen_88fc5418: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#10491C',
+    color: '#F25894',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Sonthofen_06048e33: {
+  Oberstaufen_f69bfcf4: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#3C71DF',
+    color: '#FC8BCC',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Burgberg_i_Allgaeu_cc9ed026: {
+  Neunkirchen_0d78918f: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#5AB385',
+    color: '#9DB646',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Sonthofen_32a9880b: {
+  Heilbronn_3c7f746d: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#37B7C9',
+    color: '#EBFC69',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Oberstaufen_adec7d94: {
+  Bad_Rappenau_74e95782: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#2A7B6A',
+    color: '#D63CEF',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Bad_Hindelang_db6058ec: {
+  Heilbronn_fbd884ae: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#8B69D2',
+    color: '#1AD26A',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Sonthofen_f0cd93ab: {
+  Heilbronn_5cacbde1: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#E33C9D',
+    color: '#506F99',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Kempten_Allgaeu_2901c4aa: {
+  Heilbronn_0699cf58: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#22491F',
+    color: '#20DCC9',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Sonthofen_09e482f0: {
+  Sonthofen_7b479eca: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#98F40E',
+    color: '#4A55AC',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Sonthofen_10722a66: {
+  Bad_Hindelang_e1c0b443: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#85C6E5',
+    color: '#C7CEC2',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Sonthofen_a60254fa: {
+  Sonthofen_485419e2: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#E8D017',
+    color: '#4DA4DA',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Pfaffenhofen_a3b2dc29: {
+  Burgberg_i_Allgaeu_5dcbe9bd: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#EB3130',
+    color: '#F962D8',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Heilbronn_60e88333: {
+  Sonthofen_02764565: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#7AB9FA',
+    color: '#896DBC',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Neckarsulm_e2874e1b: {
+  Oberstaufen_98408b6a: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#357A91',
+    color: '#E55F54',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Bad_Rappenau_142abab8: {
+  Bad_Hindelang_3e99ed1c: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#8F2529',
+    color: '#4A7AA9',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Heilbronn_f76aff11: {
+  Sonthofen_35253eb0: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#BDE64C',
+    color: '#642965',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Bad_Rappenau_161ee522: {
+  Kempten_Allgaeu_d847bb62: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#0E3623',
+    color: '#09F622',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Heilbronn_c4567b0d: {
+  Sonthofen_9d3273c4: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#012186',
+    color: '#5F85B9',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Gundelsheim_a9fd348c: {
+  Sonthofen_1022aad6: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#F308A4',
+    color: '#3BC725',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Billigheim_f82fec7b: {
+  Sonthofen_4dc0b7bf: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#48A842',
+    color: '#F0CBF4',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Abstatt_37461cc3: {
+  Pfaffenhofen_1840181b: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#AD384F',
+    color: '#1E4B16',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Altlu_heim_73a6441e: {
+  Heilbronn_b8f7cedf: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#3DE5FA',
+    color: '#4999B5',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Heilbronn_544f79b3: {
+  Neckarsulm_ab131f54: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#78EC4E',
+    color: '#2F09FF',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Heilbronn_a695d656: {
+  Bad_Rappenau_eddfb7a8: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#451ABE',
+    color: '#826E79',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Ilsfeld_6ad03be0: {
+  Heilbronn_c394a905: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#DD04FD',
+    color: '#DB91F8',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Stuttgart_bce3c8ce: {
+  Bad_Rappenau_0da25386: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#593A1C',
+    color: '#004EE7',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Gondelsheim_f58b19f9: {
+  Heilbronn_65df0316: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#B120E0',
+    color: '#1D9755',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Karlsruhe_83662fa4: {
+  Gundelsheim_aced2b2c: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#D646A9',
+    color: '#410BDC',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Karlsruhe_5102046a: {
+  Billigheim_7cb2d067: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#BF3A74',
+    color: '#1AD083',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Heilbronn_ec07f666: {
+  Abstatt_5336d16d: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#012BE6',
+    color: '#15448E',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Ilsfeld_792976a2: {
+  Altlussheim_b427560a: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#E65E37',
+    color: '#1F8D04',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Bad_Rappenau_bb18d1ed: {
+  Heilbronn_d3c7bacd: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#6B3B1B',
+    color: '#8D4757',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Bad_Rappenau_19aee389: {
+  Heilbronn_5430ae74: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#E772D5',
+    color: '#F183D3',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Heilbronn_f8a3a289: {
+  Ilsfeld_ab645fb5: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#A6CDC8',
+    color: '#20848F',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Heilbronn_2a60bf1f: {
+  Stuttgart_6fb069cd: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#F51F8D',
+    color: '#2EABE8',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Nordheim_4d3d4762: {
+  Gondelsheim_97d96e5c: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#D59AF3',
+    color: '#78B4BC',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Heilbronn_211d579f: {
+  Karlsruhe_c75c30d5: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#06508C',
+    color: '#3FF89D',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Heilbronn_4e805ffd: {
+  Karlsruhe_73f645c0: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#00E2E6',
+    color: '#99E598',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Bad_Rappenau_4b9db017: {
+  Heilbronn_52668cad: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#AB4E16',
+    color: '#DDDB9E',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Untergruppenbach_476657f5: {
+  Ilsfeld_62cc25e3: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#4358BC',
+    color: '#F3477F',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Bad_Wimpfen_c2abf71f: {
+  Bad_Rappenau_5f122475: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#232571',
+    color: '#9050AC',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Mosbach_6d09f60d: {
+  Bad_Rappenau_16e0393b: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#855A77',
+    color: '#A49C1E',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Bad_Rappenau_fbfbf5ee: {
+  Heilbronn_e1df1bda: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#592163',
+    color: '#291F27',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Heilbronn_5d752acd: {
+  Heilbronn_0f68557e: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#D45E42',
+    color: '#E06804',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Obersulm_10296ed3: {
+  Nordheim_d6fc50a4: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#AF5B35',
+    color: '#6B4F7A',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Berlin_b3498a36: {
+  Heilbronn_c1af522c: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#BFE841',
+    color: '#6F76B1',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Brotterode_Trusetal_b7c5c415: {
+  Heilbronn_96a4b343: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#FBB51E',
+    color: '#0A999F',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Dittelbrunn_f3063a82: {
+  Bad_Rappenau_34630712: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#76DC7D',
+    color: '#C45D15',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Seckach_056b3bc5: {
+  Untergruppenbach_4371d471: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#8A3A15',
+    color: '#C69CF6',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Leingarten_a54a6aba: {
+  Bad_Wimpfen_6bd73e6c: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#4CD430',
+    color: '#2F19FC',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Mundelsheim_bba487bf: {
+  Mosbach_f7bd2ada: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#BC5D89',
+    color: '#235163',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Bad_Wimpfen_d72b0243: {
+  Bad_Rappenau_ba7e5361: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#B64155',
+    color: '#AD3AD6',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Mosbach_715b7276: {
+  Heilbronn_359f0e85: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#7A97A9',
+    color: '#2D3C7A',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Heilbronn_280f5e4c: {
+  Obersulm_0071c2e5: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#DF2740',
+    color: '#D2B858',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Heilbronn_8793d49e: {
+  Berlin_37b3e860: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#67A9C8',
+    color: '#457628',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Oberderdingen_404c641a: {
+  Brotterode_Trusetal_449d6451: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#5A157B',
+    color: '#CF9165',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Karlsruhe_bda0b629: {
+  Dittelbrunn_08fb64ce: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#4CCFEA',
+    color: '#A26B24',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Gemmingen_209550b5: {
+  Seckach_22b8ef83: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#3662FF',
+    color: '#30E30C',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Bad_Rappenau_3abce764: {
+  Leingarten_3dfe4567: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#7D82D4',
+    color: '#864760',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Abstatt_9d0fc5c2: {
+  Mundelsheim_d35b33d5: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#9FD9FC',
+    color: '#15BC56',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Abstatt_ebb03ced: {
+  Bad_Wimpfen_353daf2a: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#6286DB',
+    color: '#6B04C7',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Untergruppenbach_2a0cfa7f: {
+  Mosbach_ebfe198f: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#F77208',
+    color: '#D724C9',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Heilbronn_82b3c9b6: {
+  Heilbronn_e93d3059: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#3C360B',
+    color: '#F62E21',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Bad_Rappenau_8c319663: {
+  Heilbronn_69f31aa6: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#D3EB70',
+    color: '#40049F',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Heilbronn_64a639af: {
+  Oberderdingen_ca0d2201: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#93EB84',
+    color: '#FA71C1',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Verwaltungsverband_Schozach_Bottwartal_766be0ff: {
+  Karlsruhe_a9d78e6a: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#593BCC',
+    color: '#5B6C9B',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Verwaltungsverband_Schozach_Bottwartal_6b524fac: {
+  Gemmingen_798c0624: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#8C44CC',
+    color: '#E9E6D7',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Heilbronn_564d5f18: {
+  Bad_Rappenau_8a4cc292: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#8DC2E9',
+    color: '#50CF43',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Verwaltungsgemeinschaft_Bad_Rappenau_c7dea3d2: {
+  Abstatt_a59879e3: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#F3FBFC',
+    color: '#A30E24',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Verwaltungsverband_Schozach_Bottwartal_8d4cb3b2: {
+  Abstatt_b80a1665: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#EE6952',
+    color: '#CBF6D9',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Verwaltungsgemeinschaft_Bad_Rappenau_06d2ec93: {
+  Untergruppenbach_52178b1e: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#0BCB57',
+    color: '#C78F4F',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Verwaltungsgemeinschaft_Bad_Rappenau_033ce091: {
+  Heilbronn_21fcd972: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#C08CB5',
+    color: '#771B7C',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Verwaltungsgemeinschaft_Bad_Rappenau_f8739ace: {
+  Bad_Rappenau_c0f11257: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#4EB666',
+    color: '#43CCB0',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Heilbronn_812418a5: {
+  Heilbronn_12fdbd3f: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#17B767',
+    color: '#52AF12',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Verwaltungsverband_Schozach_Bottwartal_0fa2186d: {
+  Verwaltungsverband_Schozach_Bottwartal_76f15959: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#3D6CDF',
+    color: '#86F54A',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Verwaltungsverband_Schozach_Bottwartal_08bbb382: {
+  Verwaltungsverband_Schozach_Bottwartal_ce158a8e: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#528364',
+    color: '#B65E9F',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Heilbronn_17e2b937: {
+  Heilbronn_8ef89f0f: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#3D1E79',
+    color: '#A0C8EC',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Verwaltungsgemeinschaft_Brackenheim_0d9cf394: {
+  Verwaltungsgemeinschaft_Bad_Rappenau_55a54b65: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#39C03B',
+    color: '#9AF6FE',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Verwaltungsgemeinschaft_Brackenheim_5e9b2b87: {
+  Verwaltungsverband_Schozach_Bottwartal_1de000f7: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#5C445B',
+    color: '#E8E41A',
     added: '2020-01-01',
   },
-  Bosch_eBike_Tour_Heilbronn_1e72de4a: {
+  Verwaltungsgemeinschaft_Bad_Rappenau_eae051ee: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#14E4E1',
+    color: '#69613C',
+    added: '2020-01-01',
+  },
+  Verwaltungsgemeinschaft_Bad_Rappenau_0265d8f9: {
+    description: '',
+    rating: 5,
+    location: 'Germany',
+    color: '#D96CD9',
+    added: '2020-01-01',
+  },
+  Verwaltungsgemeinschaft_Bad_Rappenau_aa27b34d: {
+    description: '',
+    rating: 5,
+    location: 'Germany',
+    color: '#4A6032',
+    added: '2020-01-01',
+  },
+  Heilbronn_d2232957: {
+    description: '',
+    rating: 5,
+    location: 'Germany',
+    color: '#EE40DE',
+    added: '2020-01-01',
+  },
+  Verwaltungsverband_Schozach_Bottwartal_c2d09aca: {
+    description: '',
+    rating: 5,
+    location: 'Germany',
+    color: '#3A644A',
+    added: '2020-01-01',
+  },
+  Verwaltungsverband_Schozach_Bottwartal_e1e286f1: {
+    description: '',
+    rating: 5,
+    location: 'Germany',
+    color: '#112DAC',
+    added: '2020-01-01',
+  },
+  Heilbronn_465c6170: {
+    description: '',
+    rating: 5,
+    location: 'Germany',
+    color: '#5FCF93',
+    added: '2020-01-01',
+  },
+  Verwaltungsgemeinschaft_Brackenheim_a1fbf7d0: {
+    description: '',
+    rating: 5,
+    location: 'Germany',
+    color: '#2018AF',
+    added: '2020-01-01',
+  },
+  Verwaltungsgemeinschaft_Brackenheim_8654eb82: {
+    description: '',
+    rating: 5,
+    location: 'Germany',
+    color: '#0D41AB',
+    added: '2020-01-01',
+  },
+  Heilbronn_33f6f57a: {
+    description: '',
+    rating: 5,
+    location: 'Germany',
+    color: '#4DDB55',
+    added: '2020-01-01',
+  },
+  Heilbronn_53b6a7b2: {
+    description: '',
+    rating: 5,
+    location: 'Germany',
+    color: '#BF19D4',
+    added: '2020-01-01',
+  },
+  Heilbronn_143659e4: {
+    description: '',
+    rating: 5,
+    location: 'Germany',
+    color: '#8748FB',
+    added: '2020-01-01',
+  },
+  Heilbronn_e63a5ed1: {
+    description: '',
+    rating: 5,
+    location: 'Germany',
+    color: '#3E9B5C',
+    added: '2020-01-01',
+  },
+  Bad_Rappenau_344eea2d: {
+    description: '',
+    rating: 5,
+    location: 'Germany',
+    color: '#885A82',
+    added: '2020-01-01',
+  },
+  Bad_Rappenau_155eb246: {
+    description: '',
+    rating: 5,
+    location: 'Germany',
+    color: '#15D72A',
+    added: '2020-01-01',
+  },
+  Bad_Rappenau_688a2887: {
+    description: '',
+    rating: 5,
+    location: 'Germany',
+    color: '#4E0DF4',
+    added: '2020-01-01',
+  },
+  Bad_Rappenau_6cde6df5: {
+    description: '',
+    rating: 5,
+    location: 'Germany',
+    color: '#3FEE29',
+    added: '2020-01-01',
+  },
+  Heilbronn_3715554d: {
+    description: '',
+    rating: 5,
+    location: 'Germany',
+    color: '#86F3A1',
+    added: '2020-01-01',
+  },
+  Heilbronn_cb7f85a7: {
+    description: '',
+    rating: 5,
+    location: 'Germany',
+    color: '#77AC97',
+    added: '2020-01-01',
+  },
+  Heilbronn_61b19320: {
+    description: '',
+    rating: 5,
+    location: 'Germany',
+    color: '#4A272D',
+    added: '2020-01-01',
+  },
+  Heilbronn_fd44973f: {
+    description: '',
+    rating: 5,
+    location: 'Germany',
+    color: '#B24899',
+    added: '2020-01-01',
+  },
+  Heilbronn_376ef83e: {
+    description: '',
+    rating: 5,
+    location: 'Germany',
+    color: '#090C77',
     added: '2020-01-01',
   },
 }

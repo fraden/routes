@@ -40,8 +40,8 @@ const Home = ({ routes }: RoutesProps) => {
       <header className="py-16 text-center">
         <img src="/logo.svg" alt="Trail Router logotype" className="mx-auto mb-3" />
         <p className="text-forest-darkest">
-          Here you can see some of my Bosch eBike tours. Due to privacy reasons all trips start on 01/01/2000, 00:00. Each trip contains the
-          data of a whole day.
+          Here you can see some of my eBike tours. Due to privacy reasons all trips start on 01/01/2000, 00:00. Each trip contains the data
+          of a whole day.
         </p>
       </header>
       <section>
