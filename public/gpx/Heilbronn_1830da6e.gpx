@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="gpx.py -- https://github.com/tkrajina/gpxpy">
+  <metadata>
+    <name>Heilbronn_1830da6e</name>
+  </metadata>
+  <trk>
+    <name>Heilbronn_1830da6e</name>
+    <trkseg>
+      <trkpt lat="49.190239" lon="9.141706">
+        <ele>200.8</ele>
+        <time>2000-01-01T00:00:00Z</time>
+      </trkpt>
+      <trkpt lat="49.190854" lon="9.142134">
+        <ele>200.8</ele>
+        <time>2000-01-01T00:00:20Z</time>
+      </trkpt>
+      <trkpt lat="49.190662" lon="9.141913">
+        <ele>200.6</ele>
+        <time>2000-01-01T00:00:25Z</time>
+      </trkpt>
+      <trkpt lat="49.190279" lon="9.142058">
+        <ele>199</ele>
+        <time>2000-01-01T00:00:32Z</time>
+      </trkpt>
+      <trkpt lat="49.190418" lon="9.142965">
+        <ele>196.5</ele>
+        <time>2000-01-01T00:00:44Z</time>
+      </trkpt>
+      <trkpt lat="49.190687" lon="9.14347">
+        <ele>194.8</ele>
+        <time>2000-01-01T00:00:50Z</time>
+      </trkpt>
+      <trkpt lat="49.192408" lon="9.143492">
+        <ele>188.3</ele>
+        <time>2000-01-01T00:01:17Z</time>
+      </trkpt>
+      <trkpt lat="49.192796" lon="9.141955">
+        <ele>187</ele>
+        <time>2000-01-01T00:01:36Z</time>
+      </trkpt>
+      <trkpt lat="49.19273" lon="9.141325">
+        <ele>187</ele>
+        <time>2000-01-01T00:01:44Z</time>
+      </trkpt>
+      <trkpt lat="49.192579" lon="9.141294">
+        <ele>187</ele>
+        <time>2000-01-01T00:01:49Z</time>
+      </trkpt>
+      <trkpt lat="49.192574" lon="9.141464">
+        <ele>187</ele>
+        <time>2000-01-01T00:02:36Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
