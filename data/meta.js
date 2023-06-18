@@ -1,5 +1,12 @@
 const colors = require('tailwindcss/colors') // eslint-disable-line
 const meta = {
+  Sindelfingen_8c42164c: {
+    description: '',
+    rating: 5,
+    location: 'Germany',
+    color: '#98138D',
+    added: '2020-01-01',
+  },
   Sindelfingen_026299f6: {
     description: '',
     rating: 5,
