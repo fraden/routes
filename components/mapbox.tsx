@@ -30,7 +30,7 @@ const MapBox = ({ routes, initialLng = lng, initialLat = lat }: MapBoxProps): JS
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: mapContainer.current,
-      style: 'mapbox://styles/mapbox/outdoors-v11?optimize=true',
+      style: 'mapbox://styles/mapbox/outdoors-v11',
       center: [initialLng, initialLat],
       zoom,
     })
@@ -54,7 +54,7 @@ const MapBox = ({ routes, initialLng = lng, initialLat = lat }: MapBoxProps): JS
     map.on('load', () => {
       map.addSource('mapbox-dem', {
         type: 'raster-dem',
-        url: 'mapbox://mapbox.mapbox-terrain-dem-v1',
+        url: 'mapbox://styles/mapbox/outdoors-v11',
         tileSize: 512,
         maxzoom: 14,
       })
