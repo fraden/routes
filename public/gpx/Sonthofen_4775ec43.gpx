@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="gpx.py -- https://github.com/tkrajina/gpxpy">
+  <metadata>
+    <name>Sonthofen_4775ec43</name>
+  </metadata>
+  <trk>
+    <name>Sonthofen_4775ec43</name>
+    <trkseg>
+      <trkpt lat="47.518509" lon="10.286446">
+        <ele>744.9</ele>
+        <time>2000-01-01T00:00:00Z</time>
+      </trkpt>
+      <trkpt lat="47.518028" lon="10.287031">
+        <ele>744.9</ele>
+        <time>2000-01-01T00:00:21Z</time>
+      </trkpt>
+      <trkpt lat="47.518162" lon="10.288683">
+        <ele>745.3</ele>
+        <time>2000-01-01T00:01:10Z</time>
+      </trkpt>
+      <trkpt lat="47.516361" lon="10.291536">
+        <ele>748.2</ele>
+        <time>2000-01-01T00:02:05Z</time>
+      </trkpt>
+      <trkpt lat="47.519058" lon="10.293723">
+        <ele>748.9</ele>
+        <time>2000-01-01T00:03:06Z</time>
+      </trkpt>
+      <trkpt lat="47.520496" lon="10.296054">
+        <ele>749.6</ele>
+        <time>2000-01-01T00:03:54Z</time>
+      </trkpt>
+      <trkpt lat="47.520592" lon="10.300445">
+        <ele>757.8</ele>
+        <time>2000-01-01T00:04:58Z</time>
+      </trkpt>
+      <trkpt lat="47.520031" lon="10.302069">
+        <ele>758.6</ele>
+        <time>2000-01-01T00:05:39Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
