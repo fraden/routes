@@ -1,6 +1,7 @@
 import { GetStaticProps, GetStaticPaths } from 'next'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import { useState } from 'react'
 import { NextSeo } from 'next-seo'
 import colors from 'tailwindcss/colors' // eslint-disable-line
 
@@ -27,6 +28,11 @@ const RoutePage = ({ routes }: { routes: Route[] }): JSX.Element | null => {
   const router = useRouter()
   const route = routes.find(x => x.slug === router.query.slug)
   const isSmall = useIsSmall()
+  const [currentPointIndex, setCurrentPointIndex] = useState(0)
+
+  const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setCurrentPointIndex(parseInt(event.target.value, 10))
+  }
   if (!route) {
     return null
   }
@@ -134,11 +140,29 @@ const RoutePage = ({ routes }: { routes: Route[] }): JSX.Element | null => {
           </header>
           {!isSmall && (
             <div className="block text-xl text-forest pb-[50%] relative -mx-5">
-              <MapBox routes={[route]} />
+              <MapBox
+                routes={[route]}
+                currentPointIndex={currentPointIndex}
+                selectedRouteCoordinates={route.gpxGeoJson.features[0].geometry.coordinates}
+              />
             </div>
           )}
           <div className="p-2 mb-2 border border-gray-200 rounded">
-            <Chart coordinates={route.gpxGeoJson.features[0].geometry.coordinates} type={route.gpxGeoJson.features[0].geometry.type} />
+            <Chart
+              coordinates={route.gpxGeoJson.features[0].geometry.coordinates}
+              type={route.gpxGeoJson.features[0].geometry.type}
+              currentPointIndex={currentPointIndex}
+            />
+          </div>
+          <div className="my-4">
+            <input
+              type="range"
+              min="0"
+              max={route.gpxGeoJson.features[0].geometry.coordinates.length - 1}
+              value={currentPointIndex}
+              onChange={handleSliderChange}
+              className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
+            />
           </div>
           <ul className="grid grid-cols-2 grid-rows-2 gap-2 mb-6">
             <Stat type="Distance" value={`${Math.round(route.distance * 10) / 10} km`} centered className={statBoxClassName} />

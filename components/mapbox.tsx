@@ -12,6 +12,8 @@ type MapBoxProps = {
   routes: Routes
   initialLat?: number
   initialLng?: number
+  currentPointIndex?: number
+  selectedRouteCoordinates?: Array<[number, number, number]>
 }
 
 // Initial map
@@ -20,9 +22,10 @@ const lng = 10.275971
 const lat = 49.468342
 const zoom = 6
 
-const MapBox = ({ routes, initialLng = lng, initialLat = lat }: MapBoxProps): JSX.Element => {
-  const [stateMap, setStateMap] = useState(null)
-  const mapContainer = useRef()
+const MapBox = ({ routes, initialLng = lng, initialLat = lat, currentPointIndex, selectedRouteCoordinates }: MapBoxProps): JSX.Element => {
+  const [stateMap, setStateMap] = useState<mapboxgl.Map | null>(null)
+  const mapContainer = useRef<HTMLDivElement | null>(null)
+  const markerRef = useRef<mapboxgl.Marker | null>(null)
 
   const router = useRouter()
   const queryRoute = router.query.slug
@@ -269,9 +272,20 @@ const MapBox = ({ routes, initialLng = lng, initialLat = lat }: MapBoxProps): JS
         }
       })
     }
-  }, [queryRoute, stateMap])
+  }, [queryRoute, stateMap, routes, initialLat, initialLng]) // Added routes, initialLat, initialLng as dependencies
 
-  return <div className="absolute inset-0" ref={mapContainer} />
+  useEffect(() => {
+    if (stateMap && selectedRouteCoordinates && typeof currentPointIndex === 'number' && selectedRouteCoordinates[currentPointIndex]) {
+      const currentCoord = selectedRouteCoordinates[currentPointIndex]
+      if (markerRef.current) {
+        markerRef.current.setLngLat([currentCoord[0], currentCoord[1]])
+      } else {
+        markerRef.current = new mapboxgl.Marker().setLngLat([currentCoord[0], currentCoord[1]]).addTo(stateMap)
+      }
+    }
+  }, [stateMap, currentPointIndex, selectedRouteCoordinates])
+
+  return <div className="absolute inset-0" ref={mapContainer as React.RefObject<HTMLDivElement>} />
 }
 
 export default MapBox
