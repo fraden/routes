@@ -1,2194 +1,2180 @@
 const colors = require('tailwindcss/colors') // eslint-disable-line
 const meta = {
-  Sindelfingen_44b7de49: {
+  Sindelfingen_f24d78c5: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#321801',
+    color: '#8C5153',
     added: '2020-01-01',
   },
-  Renningen_97bbe8ad: {
+  Magstadt_21038b10: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#872164',
+    color: '#9618AD',
     added: '2020-01-01',
   },
-  Sindelfingen_ed29ab9e: {
+  Sindelfingen_d0ae2387: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#43275A',
+    color: '#97B331',
     added: '2020-01-01',
   },
-  Sindelfingen_19671498: {
+  Sindelfingen_ea2498ce: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#F3D167',
+    color: '#811D2D',
     added: '2020-01-01',
   },
-  Sindelfingen_e5e9b6d9: {
+  Freiberg_am_Neckar_80f634fa: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#2B72BD',
+    color: '#F2F2F1',
     added: '2020-01-01',
   },
-  Abstatt_ba7b9bf8: {
+  Sindelfingen_2064b40c: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#72929B',
+    color: '#832DB4',
     added: '2020-01-01',
   },
-  Brackenheim_fdca19e5: {
+  Nauders_2bafc968: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#89C8A6',
+    color: '#924AA9',
     added: '2020-01-01',
   },
-  Sindelfingen_8b61008a: {
+  Galtuer_581033ce: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#0F4AF0',
+    color: '#344E11',
     added: '2020-01-01',
   },
-  Gemeinde_Kappl_af56780d: {
+  See_e41d1fda: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#43C1D6',
+    color: '#514993',
     added: '2020-01-01',
   },
-  Gemeinde_See_f1d6ac51: {
+  See_c2950bbe: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#33C445',
+    color: '#70A183',
     added: '2020-01-01',
   },
-  Gemeinde_Ischgl_135ca0da: {
+  Sindelfingen_bf69c6be: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#67D303',
+    color: '#45635E',
     added: '2020-01-01',
   },
-  Sindelfingen_935c8c49: {
+  Sindelfingen_90fb8d82: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#8064DD',
+    color: '#DD95A1',
     added: '2020-01-01',
   },
-  Sindelfingen_60a17d98: {
+  Magstadt_f3532b1a: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#C6DF76',
+    color: '#BE8CDF',
     added: '2020-01-01',
   },
-  Seewald_3555a957: {
+  Sindelfingen_04a5efda: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#77B87A',
+    color: '#58C64C',
     added: '2020-01-01',
   },
-  Leonberg_47ceab06: {
+  Sindelfingen_fbf76a58: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#D0BCBE',
+    color: '#5E49F4',
     added: '2020-01-01',
   },
-  Enzkloesterle_8b4bc844: {
+  Sindelfingen_bc6a5f26: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#5EFBB8',
+    color: '#78F232',
     added: '2020-01-01',
   },
-  Eningen_unter_Achalm_d2bb8146: {
+  Schoenaich_9d3baa7d: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#C85B9C',
+    color: '#94207B',
     added: '2020-01-01',
   },
-  Sindelfingen_dac07037: {
+  Sindelfingen_562a25ed: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#7A4BC1',
+    color: '#F95D21',
     added: '2020-01-01',
   },
-  Sindelfingen_c35f12bb: {
+  Sindelfingen_9d014ef6: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#4F14BE',
+    color: '#8F56DB',
     added: '2020-01-01',
   },
-  Sindelfingen_2dbd527b: {
+  Sindelfingen_5983588b: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#2990D5',
+    color: '#412598',
     added: '2020-01-01',
   },
-  Gundelsheim_1384ba07: {
+  Sindelfingen_6cc7509b: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#625C07',
+    color: '#B14E37',
     added: '2020-01-01',
   },
-  Sindelfingen_fb020a6b: {
+  Sindelfingen_fb91a569: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#9AB169',
+    color: '#EDD4DA',
     added: '2020-01-01',
   },
-  Sindelfingen_24dbeffd: {
+  Sindelfingen_428d84ce: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#8E8833',
+    color: '#4BC479',
     added: '2020-01-01',
   },
-  Sindelfingen_bb6ccbeb: {
+  Sindelfingen_e23dda6c: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#A2C4F9',
+    color: '#A9352D',
     added: '2020-01-01',
   },
-  Sindelfingen_abad6854: {
+  Sindelfingen_b6da42b5: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#2294B1',
+    color: '#DDB56D',
     added: '2020-01-01',
   },
-  Sindelfingen_0883e93f: {
+  Sindelfingen_c5a51415: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#E92439',
+    color: '#CD2177',
     added: '2020-01-01',
   },
-  Gaertringen_23a0f7d3: {
+  Sindelfingen_b0ff2727: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#69D383',
+    color: '#469B23',
     added: '2020-01-01',
   },
-  Boeblingen_0f1f8ce0: {
+  Sindelfingen_47918a98: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#B311B2',
+    color: '#7BD0AD',
     added: '2020-01-01',
   },
-  Sindelfingen_96f3aad9: {
+  Sindelfingen_d58d2104: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#3BDA15',
+    color: '#8B22F5',
     added: '2020-01-01',
   },
-  Sindelfingen_7115d4a6: {
+  Sindelfingen_fff5ade4: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#AB6827',
+    color: '#8B0F70',
     added: '2020-01-01',
   },
-  Magstadt_abfbe6e1: {
+  Sindelfingen_4b3db96b: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#2CFAD9',
+    color: '#6A4D7F',
     added: '2020-01-01',
   },
-  Sindelfingen_53a767ca: {
+  Renningen_68779623: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#B07365',
+    color: '#9C4A5C',
     added: '2020-01-01',
   },
-  Sindelfingen_ecea3480: {
+  Sindelfingen_cc0251d6: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#517422',
+    color: '#E3ECD7',
     added: '2020-01-01',
   },
-  Sindelfingen_3a518299: {
+  Sindelfingen_d770b506: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#048B00',
+    color: '#A883D2',
     added: '2020-01-01',
   },
-  Sindelfingen_aa45042e: {
+  Sindelfingen_1f01a2ae: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#A9135B',
+    color: '#991241',
     added: '2020-01-01',
   },
-  Sindelfingen_6358e2ce: {
+  Sindelfingen_b7eb8004: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#7CEB69',
+    color: '#3FDB23',
     added: '2020-01-01',
   },
-  Sindelfingen_f7a2d462: {
+  Sindelfingen_794189f0: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#50C511',
+    color: '#FC3268',
     added: '2020-01-01',
   },
-  Sindelfingen_6ba33700: {
+  Renningen_b541d7c8: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#740AFC',
+    color: '#6A047A',
     added: '2020-01-01',
   },
-  Sindelfingen_83700a2c: {
+  Sindelfingen_efa78065: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#FA2249',
+    color: '#3D6D6D',
     added: '2020-01-01',
   },
-  Sindelfingen_d3aa7102: {
+  Sindelfingen_723dcb6f: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#77C40B',
+    color: '#9A05BC',
     added: '2020-01-01',
   },
-  Sindelfingen_39a03275: {
+  Sindelfingen_34426c43: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#2995A7',
+    color: '#77B77C',
     added: '2020-01-01',
   },
-  Sindelfingen_83479483: {
+  Abstatt_4a1e842d: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#3633A1',
+    color: '#33DAD3',
     added: '2020-01-01',
   },
-  Sindelfingen_2bd4ed39: {
+  Brackenheim_b0198828: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#34B0D3',
+    color: '#7D0BCB',
     added: '2020-01-01',
   },
-  Sindelfingen_c1e5ff4e: {
+  Sindelfingen_891c676b: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#8682FA',
+    color: '#5E67F1',
     added: '2020-01-01',
   },
-  Sindelfingen_db71897e: {
+  Gemeinde_Kappl_a3c4cef8: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#0DEDCF',
+    color: '#920B8D',
     added: '2020-01-01',
   },
-  Sindelfingen_5390df59: {
+  Gemeinde_See_1559c089: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#8242B0',
+    color: '#F4F865',
     added: '2020-01-01',
   },
-  Sindelfingen_dfd3ff2f: {
+  Gemeinde_Ischgl_8f903a00: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#6D5D09',
+    color: '#C61F3C',
     added: '2020-01-01',
   },
-  Sindelfingen_7c05ce67: {
+  Sindelfingen_0dfe97f3: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#F4E3E6',
+    color: '#0E7017',
     added: '2020-01-01',
   },
-  Sindelfingen_f99be4e8: {
+  Sindelfingen_8fb18698: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#820C99',
+    color: '#7FD741',
     added: '2020-01-01',
   },
-  Sindelfingen_acca4a1c: {
+  Seewald_5bc6443a: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#856FD4',
+    color: '#1518CF',
     added: '2020-01-01',
   },
-  Sindelfingen_5f78d367: {
+  Leonberg_36435568: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#4EDCFC',
+    color: '#7152B2',
     added: '2020-01-01',
   },
-  Sindelfingen_6782e147: {
+  Enzkloesterle_b9a90396: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#9CC3D7',
+    color: '#B76ADC',
     added: '2020-01-01',
   },
-  Sindelfingen_433f5d7e: {
+  Eningen_unter_Achalm_6bbb4c5c: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#E8DC55',
+    color: '#F1F748',
     added: '2020-01-01',
   },
-  Sindelfingen_0bca40b5: {
+  Sindelfingen_8c1edc80: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#39A96B',
+    color: '#423B17',
     added: '2020-01-01',
   },
-  Boeblingen_ff08dabd: {
+  Sindelfingen_87ee6803: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#472E28',
+    color: '#14B28C',
     added: '2020-01-01',
   },
-  Sindelfingen_9747e383: {
+  Sindelfingen_29ec9617: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#C06F27',
+    color: '#1F8A65',
     added: '2020-01-01',
   },
-  Sindelfingen_3abee9a3: {
+  Gundelsheim_abb30576: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#6540A9',
+    color: '#468E16',
     added: '2020-01-01',
   },
-  Sindelfingen_598da4cf: {
+  Sindelfingen_1180359a: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#ABE4FC',
+    color: '#95C4F2',
     added: '2020-01-01',
   },
-  Sindelfingen_f005c663: {
+  Sindelfingen_c3dbf51f: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#CFD240',
+    color: '#C8F6F8',
     added: '2020-01-01',
   },
-  Sindelfingen_c7ff2a90: {
+  Sindelfingen_fe99afab: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#329CE4',
+    color: '#00A427',
     added: '2020-01-01',
   },
-  Sindelfingen_f2b809be: {
+  Sindelfingen_ce08cba7: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#7DC8BF',
+    color: '#3A7947',
     added: '2020-01-01',
   },
-  Sindelfingen_ef9bf756: {
+  Sindelfingen_7dc745e0: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#AADF51',
+    color: '#CFC68D',
     added: '2020-01-01',
   },
-  Sindelfingen_816f64d0: {
+  Gaertringen_de4fe02a: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#A6076B',
+    color: '#4BBCB9',
     added: '2020-01-01',
   },
-  Sindelfingen_241db006: {
+  Boeblingen_da89b854: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#3999B1',
+    color: '#E55A84',
     added: '2020-01-01',
   },
-  Sindelfingen_2ba2ba43: {
+  Sindelfingen_c69e33c9: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#B7A321',
+    color: '#47B8A5',
     added: '2020-01-01',
   },
-  Sindelfingen_efd15fb2: {
+  Sindelfingen_dc29b6d9: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#D851AE',
+    color: '#6B5226',
     added: '2020-01-01',
   },
-  Sindelfingen_59c0f835: {
+  Magstadt_0e895764: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#CFF492',
+    color: '#B974A8',
     added: '2020-01-01',
   },
-  Sindelfingen_dc9827b6: {
+  Sindelfingen_8c39ca8b: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#BCC7D7',
+    color: '#A5B05C',
     added: '2020-01-01',
   },
-  Weil_der_Stadt_a0bba175: {
+  Sindelfingen_f93cf350: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#658F84',
+    color: '#9A9ADC',
     added: '2020-01-01',
   },
-  Stuttgart_a7a5acd8: {
+  Sindelfingen_40e99e22: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#C8B122',
+    color: '#D5F857',
     added: '2020-01-01',
   },
-  Magstadt_8ded8c0c: {
+  Sindelfingen_ad62e155: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#B2FB8A',
+    color: '#656DD7',
     added: '2020-01-01',
   },
-  Sindelfingen_b5a5475e: {
+  Sindelfingen_2db8e0a0: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#9089B4',
+    color: '#329643',
     added: '2020-01-01',
   },
-  Sindelfingen_edb013f0: {
+  Sindelfingen_a43ce611: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#E9401F',
+    color: '#FAC66F',
     added: '2020-01-01',
   },
-  Sindelfingen_b9a4a80d: {
+  Sindelfingen_ab790a28: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#6EE9D5',
+    color: '#4F4AD2',
     added: '2020-01-01',
   },
-  Weil_der_Stadt_9c87f8db: {
+  Sindelfingen_395a0b58: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#DD1CCE',
+    color: '#BD4231',
     added: '2020-01-01',
   },
-  Sindelfingen_dc42c544: {
+  Sindelfingen_4cde61d4: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#1B6E54',
+    color: '#3089FD',
     added: '2020-01-01',
   },
-  Sindelfingen_253ffe35: {
+  Sindelfingen_13f1da0c: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#4529B8',
+    color: '#8F2D40',
     added: '2020-01-01',
   },
-  Sindelfingen_6d356d69: {
+  Sindelfingen_55e6778b: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#3F539D',
+    color: '#1CF088',
     added: '2020-01-01',
   },
-  Sindelfingen_eb7d0975: {
+  Sindelfingen_95a3b888: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#0753D5',
+    color: '#D22513',
     added: '2020-01-01',
   },
-  Sindelfingen_0bea42c8: {
+  Sindelfingen_83d3d090: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#18CB45',
+    color: '#E206B3',
     added: '2020-01-01',
   },
-  Sindelfingen_534e5b3e: {
+  Sindelfingen_4f07d950: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#9D2223',
+    color: '#F68C42',
     added: '2020-01-01',
   },
-  Sindelfingen_9beeaa62: {
+  Sindelfingen_84a2b9cf: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#06BCE9',
+    color: '#9B0EDC',
     added: '2020-01-01',
   },
-  Boeblingen_929af211: {
+  Sindelfingen_df7e0983: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#5C4530',
+    color: '#5574F8',
     added: '2020-01-01',
   },
-  Boeblingen_bcb1c730: {
+  Sindelfingen_d3578ec9: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#D25C1A',
+    color: '#B211CF',
     added: '2020-01-01',
   },
-  Sindelfingen_7ff1c2be: {
+  Sindelfingen_fe68947a: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#B076D3',
+    color: '#4E01AA',
     added: '2020-01-01',
   },
-  Sindelfingen_89eb1a99: {
+  Sindelfingen_9ce274c0: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#9D7AA8',
+    color: '#EDF98A',
     added: '2020-01-01',
   },
-  Sindelfingen_74a5b9f5: {
+  Sindelfingen_4f7d77be: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#BD8917',
+    color: '#D0073B',
     added: '2020-01-01',
   },
-  Sindelfingen_f8616059: {
+  Sindelfingen_35270452: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#64ED0E',
+    color: '#75E06D',
     added: '2020-01-01',
   },
-  Sindelfingen_dc351d61: {
+  Sindelfingen_d437eafd: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#A511F7',
+    color: '#2B8D75',
     added: '2020-01-01',
   },
-  Sindelfingen_6abfdc6d: {
+  Sindelfingen_ee3cc52d: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#F9AA78',
+    color: '#B33176',
     added: '2020-01-01',
   },
-  Sindelfingen_19e12c6f: {
+  Boeblingen_6ed6f9ca: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#BA73EA',
+    color: '#33B7EE',
     added: '2020-01-01',
   },
-  Boeblingen_962c980b: {
+  Sindelfingen_c6fc240a: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#8FEC6F',
+    color: '#90DA01',
     added: '2020-01-01',
   },
-  Sindelfingen_e6b4377e: {
+  Sindelfingen_8a915bd3: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#A39F6C',
+    color: '#BB6A8F',
     added: '2020-01-01',
   },
-  Boeblingen_d8603611: {
+  Sindelfingen_d4a7e42c: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#0EC2BD',
+    color: '#E1146F',
     added: '2020-01-01',
   },
-  Sindelfingen_e0972e50: {
+  Sindelfingen_3f3a07b3: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#AF130E',
+    color: '#56D744',
     added: '2020-01-01',
   },
-  Boeblingen_e404a547: {
+  Sindelfingen_4f54050e: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#98CE40',
+    color: '#1334E9',
     added: '2020-01-01',
   },
-  Boeblingen_dea1236f: {
+  Sindelfingen_b8dc5a56: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#73E1AD',
+    color: '#C92380',
     added: '2020-01-01',
   },
-  Sindelfingen_caa6d7fb: {
+  Sindelfingen_8ac35850: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#2D0550',
+    color: '#141EBA',
     added: '2020-01-01',
   },
-  Boeblingen_d9d1f5d1: {
+  Sindelfingen_85ee035d: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#E14EDD',
+    color: '#22A04E',
     added: '2020-01-01',
   },
-  Sindelfingen_67f53234: {
+  Sindelfingen_d1ad69bb: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#06EBCC',
+    color: '#2B6E47',
     added: '2020-01-01',
   },
-  Boeblingen_b892f059: {
+  Sindelfingen_877e40a6: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#AC3FB1',
+    color: '#1E8599',
     added: '2020-01-01',
   },
-  Boeblingen_8cd06a4f: {
+  Sindelfingen_9d58fb77: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#19E8E8',
+    color: '#37FA87',
     added: '2020-01-01',
   },
-  Boeblingen_deab10cd: {
+  Sindelfingen_bbdadf00: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#9D96AE',
+    color: '#91D884',
     added: '2020-01-01',
   },
-  Sindelfingen_0d19bc55: {
+  Sindelfingen_8398e850: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#519EBC',
+    color: '#57BB01',
     added: '2020-01-01',
   },
-  Boeblingen_7a214871: {
+  Weil_der_Stadt_6f2fbe60: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#1F5CA5',
+    color: '#83B062',
     added: '2020-01-01',
   },
-  Sonthofen_0bdc025a: {
+  Stuttgart_10eb5cf7: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#5C29B1',
+    color: '#8C304E',
     added: '2020-01-01',
   },
-  Ofterschwang_8f29a119: {
+  Magstadt_81284fd0: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#200D0D',
+    color: '#72618E',
     added: '2020-01-01',
   },
-  Waltenhofen_92fdc056: {
+  Sindelfingen_956a0206: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#039E63',
+    color: '#FC7FEF',
     added: '2020-01-01',
   },
-  Sindelfingen_afad8fec: {
+  Sindelfingen_d0fea147: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#392066',
+    color: '#0C157E',
     added: '2020-01-01',
   },
-  Sindelfingen_600a55e2: {
+  Sindelfingen_fae9e3a8: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#554600',
+    color: '#7E4C1A',
     added: '2020-01-01',
   },
-  Sindelfingen_a1afe720: {
+  Weil_der_Stadt_fc90b99e: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#EA8566',
+    color: '#624063',
     added: '2020-01-01',
   },
-  Sindelfingen_f7e32b47: {
+  Sindelfingen_d54ea4c7: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#D1C3C3',
+    color: '#4564CB',
     added: '2020-01-01',
   },
-  Boeblingen_d1623044: {
+  Sindelfingen_1c2aba48: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#301A86',
+    color: '#B5A9F9',
     added: '2020-01-01',
   },
-  Boeblingen_3a0fe029: {
+  Sindelfingen_0c08dd7e: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#365C41',
+    color: '#2468B1',
     added: '2020-01-01',
   },
-  Boeblingen_fdbbd947: {
+  Sindelfingen_6482f8ec: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#B48568',
+    color: '#D1F574',
     added: '2020-01-01',
   },
-  Boeblingen_7010f41f: {
+  Sindelfingen_96502332: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#280C16',
+    color: '#627C3C',
     added: '2020-01-01',
   },
-  Sindelfingen_874d085a: {
+  Sindelfingen_e063194e: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#2BF030',
+    color: '#A99EC8',
     added: '2020-01-01',
   },
-  Boeblingen_857cea72: {
+  Sindelfingen_12485734: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#D0613B',
+    color: '#12FDFC',
     added: '2020-01-01',
   },
-  Stuttgart_28c14066: {
+  Boeblingen_f85dc68f: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#1FEE7E',
+    color: '#FD223A',
     added: '2020-01-01',
   },
-  Sindelfingen_f3b0ce03: {
+  Boeblingen_b761ae07: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#C88652',
+    color: '#AF55BF',
     added: '2020-01-01',
   },
-  Sindelfingen_339e6e6c: {
+  Sindelfingen_8adaf664: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#69DAFE',
+    color: '#0363B4',
     added: '2020-01-01',
   },
-  Boeblingen_d826fa67: {
+  Sindelfingen_73bb798b: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#EBA18E',
+    color: '#C8EBD8',
     added: '2020-01-01',
   },
-  Sindelfingen_83abdf4d: {
+  Sindelfingen_3d6b3dd6: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#6882CE',
+    color: '#7BB1F5',
     added: '2020-01-01',
   },
-  Sindelfingen_9cab876a: {
+  Sindelfingen_c6079a5e: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#D7C62C',
+    color: '#EB6D8D',
     added: '2020-01-01',
   },
-  Boeblingen_aac2374a: {
+  Sindelfingen_057af86e: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#50299E',
+    color: '#0BFC2D',
     added: '2020-01-01',
   },
-  Stuttgart_e2a1e930: {
+  Sindelfingen_6fe010e4: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#DD07E7',
+    color: '#278B20',
     added: '2020-01-01',
   },
-  Boeblingen_e507e14f: {
+  Sindelfingen_a0966669: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#7F39D4',
+    color: '#81CA20',
     added: '2020-01-01',
   },
-  Sindelfingen_9ae04d26: {
+  Boeblingen_b21e1d80: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#B871E6',
+    color: '#871EAB',
     added: '2020-01-01',
   },
-  Boeblingen_44324451: {
+  Sindelfingen_4e315459: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#A66511',
+    color: '#EA3B94',
     added: '2020-01-01',
   },
-  Sindelfingen_666e58a1: {
+  Boeblingen_c9b333be: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#5BB8AA',
+    color: '#874672',
     added: '2020-01-01',
   },
-  Sindelfingen_3d54daf7: {
+  Sindelfingen_79f31417: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#60264C',
+    color: '#B67163',
     added: '2020-01-01',
   },
-  Sindelfingen_e26f8a65: {
+  Boeblingen_2b06e285: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#225F3F',
+    color: '#8F1142',
     added: '2020-01-01',
   },
-  Sindelfingen_865c8079: {
+  Boeblingen_bb45bd1d: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#E7135D',
+    color: '#FC2F83',
     added: '2020-01-01',
   },
-  Stuttgart_5e21dda3: {
+  Sindelfingen_9d32c226: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#D73D6C',
+    color: '#F7D8E0',
     added: '2020-01-01',
   },
-  Bad_Hindelang_de03b1ff: {
+  Boeblingen_d447bd75: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#0B89A4',
+    color: '#0D05B6',
     added: '2020-01-01',
   },
-  Sonthofen_6c15221a: {
+  Sindelfingen_d6d146c9: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#6C9B98',
+    color: '#F2D673',
     added: '2020-01-01',
   },
-  Immenstadt_im_Allgaeu_7ac44c52: {
+  Boeblingen_b1b92393: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#7446DB',
+    color: '#6352C7',
     added: '2020-01-01',
   },
-  Oberstdorf_4aaee5b3: {
+  Boeblingen_8fb4329d: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#23D7E4',
+    color: '#E614C0',
     added: '2020-01-01',
   },
-  Burgberg_i_Allgaeu_c6fca3bf: {
+  Boeblingen_47f2d15c: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#D133A7',
+    color: '#70D554',
     added: '2020-01-01',
   },
-  Sindelfingen_1c245914: {
+  Sindelfingen_def7dfcf: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#E831B4',
+    color: '#1D290A',
     added: '2020-01-01',
   },
-  Stuttgart_23ea7937: {
+  Boeblingen_b955ccf8: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#6624F9',
+    color: '#5253B6',
     added: '2020-01-01',
   },
-  Untereisesheim_3b61dd4e: {
+  Sonthofen_4e9f0992: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#03B4E5',
+    color: '#8A48F5',
     added: '2020-01-01',
   },
-  Heilbronn_77d017c2: {
+  Ofterschwang_93e391c8: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#BDB5A0',
+    color: '#9C24C5',
     added: '2020-01-01',
   },
-  Bad_Rappenau_4f0d7f81: {
+  Waltenhofen_2364ebf5: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#0A38BC',
+    color: '#E96759',
     added: '2020-01-01',
   },
-  Brackenheim_55855f18: {
+  Sindelfingen_a1921cfb: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#7659EB',
+    color: '#814793',
     added: '2020-01-01',
   },
-  Boeblingen_e28a11ab: {
+  Sindelfingen_75eea001: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#B9398D',
+    color: '#35CA2A',
     added: '2020-01-01',
   },
-  Sindelfingen_4d1cb05c: {
+  Sindelfingen_6c24c06a: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#802CB2',
+    color: '#E89F0A',
     added: '2020-01-01',
   },
-  Boeblingen_7b5c60b3: {
+  Sindelfingen_52dbca81: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#E8A470',
+    color: '#A3DBF9',
     added: '2020-01-01',
   },
-  Boeblingen_76fccb9a: {
+  Boeblingen_3e86f0ed: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#6D9C6F',
+    color: '#759149',
     added: '2020-01-01',
   },
-  Sindelfingen_b28a138f: {
+  Boeblingen_deaf580f: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#C8E8FB',
+    color: '#D2FF73',
     added: '2020-01-01',
   },
-  Bad_Liebenzell_efd53060: {
+  Boeblingen_ceb91613: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#995109',
+    color: '#B8D1E2',
     added: '2020-01-01',
   },
-  Sindelfingen_289b30bd: {
+  Boeblingen_79621636: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#F21CA1',
+    color: '#513431',
     added: '2020-01-01',
   },
-  Sindelfingen_287196fd: {
+  Sindelfingen_65e904f3: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#F8D15C',
+    color: '#2C736B',
     added: '2020-01-01',
   },
-  Sindelfingen_65b8bb4f: {
+  Boeblingen_f751b425: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#11A327',
+    color: '#0A0161',
     added: '2020-01-01',
   },
-  Sindelfingen_d0fa31e8: {
+  Stuttgart_d23a1608: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#F7B4FE',
+    color: '#B9829C',
     added: '2020-01-01',
   },
-  Sindelfingen_69dbb9fb: {
+  Sindelfingen_68f63a03: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#ECD133',
+    color: '#74A523',
     added: '2020-01-01',
   },
-  Stuttgart_6c63fbf5: {
+  Sindelfingen_2d5de7a8: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#6AD8FE',
+    color: '#E8863E',
     added: '2020-01-01',
   },
-  Burgberg_i_Allgaeu_f4fc8839: {
+  Boeblingen_8b0620a8: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#00ACDF',
+    color: '#D1459D',
     added: '2020-01-01',
   },
-  Sonthofen_68eebb01: {
+  Sindelfingen_c67bab33: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#F93DC8',
+    color: '#54BF8B',
     added: '2020-01-01',
   },
-  Memmingen_4f964c46: {
+  Sindelfingen_184070ac: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#F5EFDA',
+    color: '#75AD1F',
     added: '2020-01-01',
   },
-  Boeblingen_d07df5eb: {
+  Boeblingen_ccf4c33f: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#7A20E7',
+    color: '#F942D7',
     added: '2020-01-01',
   },
-  Sonthofen_f9c17146: {
+  Stuttgart_89fd1aff: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#EEA8F8',
+    color: '#15335E',
     added: '2020-01-01',
   },
-  Bad_Hindelang_514bec1c: {
+  Boeblingen_9dfb2384: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#EE82F0',
+    color: '#2E82A8',
     added: '2020-01-01',
   },
-  Leutkirch_im_Allgaeu_e94c3900: {
+  Sindelfingen_c2151c1d: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#97D291',
+    color: '#21D328',
     added: '2020-01-01',
   },
-  Sindelfingen_30b6fc16: {
+  Boeblingen_e0d0aaa8: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#996D2A',
+    color: '#93406E',
     added: '2020-01-01',
   },
-  Sindelfingen_eb8bd160: {
+  Sindelfingen_382fa760: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#5AE031',
+    color: '#EF6051',
     added: '2020-01-01',
   },
-  Stuttgart_6d8a5539: {
+  Sindelfingen_908bc0e4: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#55F8F2',
+    color: '#309014',
     added: '2020-01-01',
   },
-  Sindelfingen_80b23c36: {
+  Sindelfingen_bee48d3d: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#3CF834',
+    color: '#0264BE',
     added: '2020-01-01',
   },
-  Sindelfingen_bb93dd49: {
+  Sindelfingen_e7e6c90d: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#FDE65D',
+    color: '#17E027',
     added: '2020-01-01',
   },
-  Sindelfingen_ad5e50bb: {
+  Stuttgart_f5ed6056: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#5FEFAC',
+    color: '#47266D',
     added: '2020-01-01',
   },
-  Stuttgart_c6195a68: {
+  Bad_Hindelang_10bcf4b3: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#CD355D',
+    color: '#F556FF',
     added: '2020-01-01',
   },
-  Leingarten_58c853ff: {
+  Sonthofen_1bc38d3e: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#21A3E2',
+    color: '#D34059',
     added: '2020-01-01',
   },
-  Bad_Rappenau_c9036abf: {
+  Immenstadt_im_Allgaeu_f53865f6: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#0272C0',
+    color: '#4433B5',
     added: '2020-01-01',
   },
-  Bad_Rappenau_714e9e04: {
+  Oberstdorf_c6e2a6ed: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#3EBE7B',
+    color: '#67ACF8',
     added: '2020-01-01',
   },
-  Oy_Mittelberg_29c44d97: {
+  Burgberg_i_Allgaeu_e2657ecb: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#84807E',
+    color: '#93CF75',
     added: '2020-01-01',
   },
-  Sonthofen_c189c9a8: {
+  Sindelfingen_32a30762: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#86EB9C',
+    color: '#A766E0',
     added: '2020-01-01',
   },
-  Sonthofen_09d5e1dc: {
+  Stuttgart_6221fce2: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#0D3B0E',
+    color: '#C006D9',
     added: '2020-01-01',
   },
-  Sonthofen_85b74da4: {
+  Untereisesheim_b5a1f336: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#B472A1',
+    color: '#3DFDBB',
     added: '2020-01-01',
   },
-  Bad_Hindelang_928fdb7f: {
+  Heilbronn_5142d7b2: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#7D29AD',
+    color: '#F41567',
     added: '2020-01-01',
   },
-  Heilbronn_3fa2d77d: {
+  Bad_Rappenau_0128a878: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#6AF5A0',
+    color: '#CA6A01',
     added: '2020-01-01',
   },
-  Heilbronn_94b5d414: {
+  Brackenheim_a2ab143d: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#E42EB8',
+    color: '#CA1893',
     added: '2020-01-01',
   },
-  Abstatt_f798bd0f: {
+  Boeblingen_6bd30c9d: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#6CE9B4',
+    color: '#35A85E',
     added: '2020-01-01',
   },
-  Heilbronn_ceebb083: {
+  Sindelfingen_390bd506: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#459BFB',
+    color: '#A216D6',
     added: '2020-01-01',
   },
-  Neckarsulm_9e4f32cf: {
+  Boeblingen_bcf70833: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#4AD227',
+    color: '#4E8A55',
     added: '2020-01-01',
   },
-  Heilbronn_635a5363: {
+  Boeblingen_a466ad2f: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#0E2387',
+    color: '#F3BD34',
     added: '2020-01-01',
   },
-  Heilbronn_c4963262: {
+  Sindelfingen_fcf7c006: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#D2210B',
+    color: '#519BCB',
     added: '2020-01-01',
   },
-  Heilbronn_ef6ce421: {
+  Bad_Liebenzell_f8b5b860: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#CC44CE',
+    color: '#2759ED',
     added: '2020-01-01',
   },
-  Neckarsulm_6acb8816: {
+  Sindelfingen_95befdfc: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#CE2301',
+    color: '#970BFD',
     added: '2020-01-01',
   },
-  Heilbronn_2e061f21: {
+  Sindelfingen_7af434da: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#60B767',
+    color: '#73379E',
     added: '2020-01-01',
   },
-  Heilbronn_722fd02c: {
+  Sindelfingen_e9eb1906: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#E6E327',
+    color: '#EE917E',
     added: '2020-01-01',
   },
-  Heilbronn_d4fbd57b: {
+  Sindelfingen_e622f4b4: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#3002FB',
+    color: '#942744',
     added: '2020-01-01',
   },
-  Heilbronn_75ea4ab3: {
+  Sindelfingen_27a735b3: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#5D7FD3',
+    color: '#A4B31E',
     added: '2020-01-01',
   },
-  Erlenbach_3faadc46: {
+  Stuttgart_6e5ac11b: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#691392',
+    color: '#B4CC9A',
     added: '2020-01-01',
   },
-  Heilbronn_daac6e9a: {
+  Burgberg_i_Allgaeu_81cacdb4: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#4E82BD',
+    color: '#AF6DD4',
     added: '2020-01-01',
   },
-  Heilbronn_a8614574: {
+  Sonthofen_3b390ead: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#2DBF21',
+    color: '#4DCA31',
     added: '2020-01-01',
   },
-  Nordheim_2990a776: {
+  Memmingen_7284de36: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#02256E',
+    color: '#4B210C',
     added: '2020-01-01',
   },
-  Untereisesheim_4b991c5c: {
+  Boeblingen_1a8a1c4b: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#CBA694',
+    color: '#67FD50',
     added: '2020-01-01',
   },
-  Fischen_im_Allgaeu_e261101a: {
+  Sonthofen_0494363f: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#5D1327',
+    color: '#A04A74',
     added: '2020-01-01',
   },
-  Sonthofen_4775ec43: {
+  Bad_Hindelang_d6be0189: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#4B87DC',
+    color: '#29FEAE',
     added: '2020-01-01',
   },
-  Sonthofen_1645de55: {
+  Leutkirch_im_Allgaeu_0539b481: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#285269',
+    color: '#B8598D',
     added: '2020-01-01',
   },
-  Sonthofen_66cda71c: {
+  Sindelfingen_86e28335: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#EFCA5D',
+    color: '#FA10AE',
     added: '2020-01-01',
   },
-  Sonthofen_e86825ec: {
+  Sindelfingen_f81ee743: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#42B692',
+    color: '#6127E4',
     added: '2020-01-01',
   },
-  Sonthofen_e084e9e1: {
+  Stuttgart_9f769017: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#AE3586',
+    color: '#DF525B',
     added: '2020-01-01',
   },
-  Sonthofen_7a1b95bc: {
+  Sindelfingen_c9047b70: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#00F439',
+    color: '#550B0A',
     added: '2020-01-01',
   },
-  Sonthofen_58d7e06a: {
+  Sindelfingen_7c6c801c: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#7BA7AF',
+    color: '#B4C4B0',
     added: '2020-01-01',
   },
-  Sonthofen_e7c6ace6: {
+  Sindelfingen_ff8f2e44: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#DE99B2',
+    color: '#614EA6',
     added: '2020-01-01',
   },
-  Sonthofen_4a0b9970: {
+  Stuttgart_ab8e4e17: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#AC4D68',
+    color: '#CEDAEF',
     added: '2020-01-01',
   },
-  Bad_Hindelang_b23ffca4: {
+  Leingarten_5df71a4e: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#FAF315',
+    color: '#7584CD',
     added: '2020-01-01',
   },
-  Heilbronn_1e8cce74: {
+  Bad_Rappenau_a70d1e66: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#DC96E6',
+    color: '#2BC5AD',
     added: '2020-01-01',
   },
-  Bad_Rappenau_61ae03a6: {
+  Bad_Rappenau_b503ec97: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#5F4E51',
+    color: '#E8DA63',
     added: '2020-01-01',
   },
-  Bietigheim_Bissingen_6d391acc: {
+  Oy_Mittelberg_281db232: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#E8D49E',
+    color: '#A112E8',
     added: '2020-01-01',
   },
-  Bad_Wimpfen_c4430adf: {
+  Sonthofen_7e16b3ad: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#58D3F2',
+    color: '#1E67C8',
     added: '2020-01-01',
   },
-  Sonthofen_ceb4ce2a: {
+  Sonthofen_b3cf3929: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#0C3FC0',
+    color: '#DB8FA5',
     added: '2020-01-01',
   },
-  Oberstaufen_251fb872: {
+  Sonthofen_25064b17: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#45B415',
+    color: '#C06FA9',
     added: '2020-01-01',
   },
-  Neunkirchen_566e72f3: {
+  Bad_Hindelang_3ddb5efe: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#27FB52',
+    color: '#230B52',
     added: '2020-01-01',
   },
-  Heilbronn_a188235a: {
+  Heilbronn_5aba690d: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#65771F',
+    color: '#6E9B28',
     added: '2020-01-01',
   },
-  Bad_Rappenau_f070ab7c: {
+  Heilbronn_29b2b3b3: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#7DA436',
+    color: '#912CA3',
     added: '2020-01-01',
   },
-  Heilbronn_3ecd655f: {
+  Abstatt_f02806ce: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#B3E774',
+    color: '#281ACA',
     added: '2020-01-01',
   },
-  Heilbronn_e7fa866d: {
+  Heilbronn_c1043f85: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#CA2172',
+    color: '#46EC8D',
     added: '2020-01-01',
   },
-  Heilbronn_a98c5d6e: {
+  Neckarsulm_1520db08: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#A65264',
+    color: '#C03A0D',
     added: '2020-01-01',
   },
-  Sonthofen_a61fe178: {
+  Heilbronn_046bda57: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#00E1FD',
+    color: '#57CB18',
     added: '2020-01-01',
   },
-  Bad_Hindelang_156bc2ae: {
+  Heilbronn_ae2876aa: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#3DA843',
+    color: '#F99B40',
     added: '2020-01-01',
   },
-  Sonthofen_282cb82f: {
+  Heilbronn_f56aabaa: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#5E48B3',
+    color: '#EA0297',
     added: '2020-01-01',
   },
-  Burgberg_i_Allgaeu_1ae6c8e1: {
+  Neckarsulm_10dc0e30: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#D622D2',
+    color: '#DB5CF5',
     added: '2020-01-01',
   },
-  Sonthofen_fe6786f4: {
+  Heilbronn_77661331: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#21752F',
+    color: '#C53DFF',
     added: '2020-01-01',
   },
-  Oberstaufen_17bae54b: {
+  Heilbronn_775863a8: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#3C09C9',
+    color: '#BE3567',
     added: '2020-01-01',
   },
-  Bad_Hindelang_34781d6e: {
+  Heilbronn_48a5d049: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#235A8F',
+    color: '#AF49FE',
     added: '2020-01-01',
   },
-  Sonthofen_e638b913: {
+  Heilbronn_0475aab1: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#5EAA2A',
+    color: '#F4C722',
     added: '2020-01-01',
   },
-  Kempten_Allgaeu_7b5096ab: {
+  Erlenbach_dca45a03: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#B77C65',
+    color: '#84A1BC',
     added: '2020-01-01',
   },
-  Sonthofen_bad63273: {
+  Heilbronn_fbdfb194: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#D59422',
+    color: '#7C4ED1',
     added: '2020-01-01',
   },
-  Sonthofen_f33ee9b2: {
+  Heilbronn_5f60e7cf: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#7B4879',
+    color: '#F6368F',
     added: '2020-01-01',
   },
-  Sonthofen_cfab2375: {
+  Nordheim_b645e8d6: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#CF843B',
+    color: '#D29D63',
     added: '2020-01-01',
   },
-  Pfaffenhofen_3f59d435: {
+  Untereisesheim_eecc7d75: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#2F5F28',
+    color: '#2FC886',
     added: '2020-01-01',
   },
-  Heilbronn_2f41f8dc: {
+  Fischen_im_Allgaeu_a756438b: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#7D47B4',
+    color: '#D0893D',
     added: '2020-01-01',
   },
-  Neckarsulm_526b7ea8: {
+  Sonthofen_1131b387: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#ACED31',
+    color: '#CB29B5',
     added: '2020-01-01',
   },
-  Bad_Rappenau_544cd8b1: {
+  Sonthofen_0a5300d8: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#C9C65A',
+    color: '#F48A61',
     added: '2020-01-01',
   },
-  Heilbronn_33327aa3: {
+  Sonthofen_c053b49a: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#6C587F',
+    color: '#EDD4C2',
     added: '2020-01-01',
   },
-  Bad_Rappenau_160097f8: {
+  Sonthofen_7ef4dee2: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#E87C32',
+    color: '#5EB4E4',
     added: '2020-01-01',
   },
-  Heilbronn_373cdb9f: {
+  Sonthofen_974184cb: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#7B71A7',
+    color: '#75A906',
     added: '2020-01-01',
   },
-  Gundelsheim_790c45de: {
+  Sonthofen_3f97903a: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#D35A22',
+    color: '#55A965',
     added: '2020-01-01',
   },
-  Billigheim_bbf5b3f2: {
+  Sonthofen_c78407d7: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#0D96FD',
+    color: '#E60182',
     added: '2020-01-01',
   },
-  Abstatt_3ad4b325: {
+  Sonthofen_44cf21d3: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#A48BB4',
+    color: '#18CB89',
     added: '2020-01-01',
   },
-  Altlussheim_da016123: {
+  Sonthofen_73307f3a: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#CE57D0',
+    color: '#915828',
     added: '2020-01-01',
   },
-  Heilbronn_01456527: {
+  Bad_Hindelang_29d77974: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#14DA58',
+    color: '#E66D2A',
     added: '2020-01-01',
   },
-  Heilbronn_a8d9eb3a: {
+  Heilbronn_8f5391d6: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#526988',
+    color: '#408EA8',
     added: '2020-01-01',
   },
-  Ilsfeld_a57f2fa2: {
+  Bad_Rappenau_28ecdfca: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#ED1C88',
+    color: '#1A6F53',
     added: '2020-01-01',
   },
-  Stuttgart_40c98720: {
+  Bietigheim_Bissingen_07254370: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#E14ACD',
+    color: '#EB434B',
     added: '2020-01-01',
   },
-  Gondelsheim_74c4b681: {
+  Bad_Wimpfen_3338ec22: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#DC2CA5',
+    color: '#945E09',
     added: '2020-01-01',
   },
-  Karlsruhe_b7a1963e: {
+  Sonthofen_175e4e52: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#4FB984',
+    color: '#C05FB4',
     added: '2020-01-01',
   },
-  Karlsruhe_03cb1a84: {
+  Oberstaufen_99652f20: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#210189',
+    color: '#BC87F2',
     added: '2020-01-01',
   },
-  Heilbronn_5b890340: {
+  Neunkirchen_d5c67e46: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#4F5C73',
+    color: '#DA34F7',
     added: '2020-01-01',
   },
-  Ilsfeld_a247d5fe: {
+  Heilbronn_dbbacb22: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#5DF243',
+    color: '#49AAB5',
     added: '2020-01-01',
   },
-  Bad_Rappenau_b81ec028: {
+  Bad_Rappenau_a696d27f: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#433B8D',
+    color: '#5E1743',
     added: '2020-01-01',
   },
-  Bad_Rappenau_f309f534: {
+  Heilbronn_48610f77: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#FEC5E1',
+    color: '#FDCF2F',
     added: '2020-01-01',
   },
-  Heilbronn_1e51ab51: {
+  Heilbronn_1939e422: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#18A9D8',
+    color: '#BBD5C4',
     added: '2020-01-01',
   },
-  Heilbronn_132d1fce: {
+  Heilbronn_403497a0: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#281654',
+    color: '#555B41',
     added: '2020-01-01',
   },
-  Nordheim_55003625: {
+  Sonthofen_3304f69d: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#F9E28B',
+    color: '#38CFA7',
     added: '2020-01-01',
   },
-  Heilbronn_18a3bbc8: {
+  Bad_Hindelang_021c6316: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#6D1540',
+    color: '#7E2459',
     added: '2020-01-01',
   },
-  Heilbronn_785f6a3f: {
+  Sonthofen_b0ef2e1a: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#CCD070',
+    color: '#9225AA',
     added: '2020-01-01',
   },
-  Bad_Rappenau_51674ff9: {
+  Burgberg_i_Allgaeu_5f80073b: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#623234',
+    color: '#6B7BD3',
     added: '2020-01-01',
   },
-  Untergruppenbach_07bd4979: {
+  Sonthofen_434bc48e: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#821DA4',
+    color: '#204CFE',
     added: '2020-01-01',
   },
-  Bad_Wimpfen_45bed9ac: {
+  Oberstaufen_f9a9b96d: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#35BA27',
+    color: '#AA5B80',
     added: '2020-01-01',
   },
-  Mosbach_1bb07571: {
+  Bad_Hindelang_57af386a: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#3E7870',
+    color: '#82B3A8',
     added: '2020-01-01',
   },
-  Bad_Rappenau_dbbd3693: {
+  Sonthofen_79604587: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#0FC1E9',
+    color: '#0EE4B6',
     added: '2020-01-01',
   },
-  Heilbronn_b9d746da: {
+  Kempten_Allgaeu_cce248d7: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#C25E97',
+    color: '#F03748',
     added: '2020-01-01',
   },
-  Obersulm_9ca4d719: {
+  Sonthofen_83a1d8b3: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#4477C8',
+    color: '#C2F1DD',
     added: '2020-01-01',
   },
-  Berlin_da6eb3a4: {
+  Sonthofen_a456934e: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#FF9E40',
+    color: '#52D94D',
     added: '2020-01-01',
   },
-  Brotterode_Trusetal_e88ba31a: {
+  Sonthofen_b2dda4de: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#71A336',
+    color: '#B19157',
     added: '2020-01-01',
   },
-  Dittelbrunn_0c76a16e: {
+  Pfaffenhofen_ed98bcb3: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#FED2B3',
+    color: '#C0517B',
     added: '2020-01-01',
   },
-  Seckach_50245729: {
+  Heilbronn_9d111fc4: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#8A98E0',
+    color: '#33074A',
     added: '2020-01-01',
   },
-  Leingarten_9bd022d2: {
+  Neckarsulm_e68bb085: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#1F6C0B',
+    color: '#6C78AD',
     added: '2020-01-01',
   },
-  Mundelsheim_4af8243a: {
+  Bad_Rappenau_0ee1926b: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#17B0EA',
+    color: '#1AB15B',
     added: '2020-01-01',
   },
-  Bad_Wimpfen_9128acad: {
+  Heilbronn_821ad823: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#040808',
+    color: '#6C064A',
     added: '2020-01-01',
   },
-  Mosbach_199240d1: {
+  Bad_Rappenau_3469dfa4: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#20E4EC',
+    color: '#12694A',
     added: '2020-01-01',
   },
-  Heilbronn_a337c275: {
+  Heilbronn_b27bb4b5: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#7016CE',
+    color: '#17CC62',
     added: '2020-01-01',
   },
-  Heilbronn_dfeaa078: {
+  Gundelsheim_5f36d60e: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#11BE06',
+    color: '#BB261C',
     added: '2020-01-01',
   },
-  Oberderdingen_b5a4b25a: {
+  Billigheim_26170b98: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#556EBA',
+    color: '#0867F5',
     added: '2020-01-01',
   },
-  Karlsruhe_c9c0d537: {
+  Abstatt_fe4b0409: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#91F049',
+    color: '#FD0884',
     added: '2020-01-01',
   },
-  Gemmingen_4695a6a9: {
+  Altlussheim_edc0a484: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#3E2710',
+    color: '#5510B0',
     added: '2020-01-01',
   },
-  Bad_Rappenau_b38ac9ab: {
+  Heilbronn_69a52cf8: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#4D949E',
+    color: '#71CCAC',
     added: '2020-01-01',
   },
-  Abstatt_54058240: {
+  Heilbronn_0cc8f649: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#DEC050',
+    color: '#2DA7E3',
     added: '2020-01-01',
   },
-  Abstatt_83243cc9: {
+  Ilsfeld_9e996ec9: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#E9C10A',
+    color: '#B50AFB',
     added: '2020-01-01',
   },
-  Untergruppenbach_b41d7683: {
+  Stuttgart_2ca19fa6: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#A6C564',
+    color: '#1F95A0',
     added: '2020-01-01',
   },
-  Heilbronn_35c2f73f: {
+  Gondelsheim_b186d82b: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#21074F',
+    color: '#29CB79',
     added: '2020-01-01',
   },
-  Bad_Rappenau_38d5d91f: {
+  Karlsruhe_aebd85da: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#4023A0',
+    color: '#1BDA74',
     added: '2020-01-01',
   },
-  Heilbronn_fd63e19a: {
+  Karlsruhe_450fad62: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#855F7E',
+    color: '#11F493',
     added: '2020-01-01',
   },
-  Verwaltungsverband_Schozach_Bottwartal_6914641a: {
+  Heilbronn_961eff22: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#C4C069',
+    color: '#566FF4',
     added: '2020-01-01',
   },
-  Verwaltungsverband_Schozach_Bottwartal_d3ad0c50: {
+  Ilsfeld_9e5f36e9: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#FDFD3C',
+    color: '#EACD85',
     added: '2020-01-01',
   },
-  Heilbronn_471aebdf: {
+  Bad_Rappenau_0c9bcd2b: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#EF4943',
+    color: '#95F41B',
     added: '2020-01-01',
   },
-  Verwaltungsgemeinschaft_Bad_Rappenau_477ba1a4: {
+  Bad_Rappenau_139c9981: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#0B985B',
+    color: '#B94C30',
     added: '2020-01-01',
   },
-  Verwaltungsverband_Schozach_Bottwartal_381b7a12: {
+  Heilbronn_6f6fce79: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#9B52DF',
+    color: '#7A4382',
     added: '2020-01-01',
   },
-  Verwaltungsgemeinschaft_Bad_Rappenau_74862d71: {
+  Heilbronn_7c4fa0d1: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#888165',
+    color: '#FE69DF',
     added: '2020-01-01',
   },
-  Verwaltungsgemeinschaft_Bad_Rappenau_b5822511: {
+  Nordheim_b8c8a653: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#9C2644',
+    color: '#80E0E8',
     added: '2020-01-01',
   },
-  Verwaltungsgemeinschaft_Bad_Rappenau_9c73a46d: {
+  Heilbronn_90d65c59: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#915DD1',
+    color: '#1D5959',
     added: '2020-01-01',
   },
-  Heilbronn_c726747a: {
+  Heilbronn_8ef827b9: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#16266F',
+    color: '#F6164F',
     added: '2020-01-01',
   },
-  Verwaltungsverband_Schozach_Bottwartal_1bedbcfb: {
+  Bad_Rappenau_91e8c24c: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#3EBECC',
+    color: '#4C8CF9',
     added: '2020-01-01',
   },
-  Verwaltungsverband_Schozach_Bottwartal_1c6f6b24: {
+  Untergruppenbach_54bfdede: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#7624B7',
+    color: '#0977C4',
     added: '2020-01-01',
   },
-  Heilbronn_fddffcaf: {
+  Bad_Wimpfen_ab044bdc: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#16734D',
+    color: '#300354',
     added: '2020-01-01',
   },
-  Verwaltungsgemeinschaft_Brackenheim_301f648b: {
+  Mosbach_100691c4: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#A8E5CD',
+    color: '#987AD6',
     added: '2020-01-01',
   },
-  Verwaltungsgemeinschaft_Brackenheim_9b7e4e72: {
+  Bad_Rappenau_a4a7038b: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#3BADA3',
+    color: '#DD1F44',
     added: '2020-01-01',
   },
-  Heilbronn_a9b2a1ac: {
+  Heilbronn_5f7d24ef: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#8B1205',
+    color: '#7743DE',
     added: '2020-01-01',
   },
-  Heilbronn_93156be6: {
+  Obersulm_520b6dda: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#0941AA',
+    color: '#F29EC0',
     added: '2020-01-01',
   },
-  Heilbronn_e46029bc: {
+  Berlin_61f9b747: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#5A7753',
+    color: '#E581AD',
     added: '2020-01-01',
   },
-  Heilbronn_e639dd33: {
+  Brotterode_Trusetal_f6f6b314: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#E9C80C',
+    color: '#321CC5',
     added: '2020-01-01',
   },
-  Bad_Rappenau_49545069: {
+  Dittelbrunn_f047dd9c: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#DED82B',
+    color: '#C221FA',
     added: '2020-01-01',
   },
-  Bad_Rappenau_bd0e3c89: {
+  Seckach_b8f03090: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#8CC1BE',
+    color: '#9E0518',
     added: '2020-01-01',
   },
-  Bad_Rappenau_1cd6cb92: {
+  Leingarten_df970719: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#6209F5',
+    color: '#FA88AB',
     added: '2020-01-01',
   },
-  Bad_Rappenau_aba1a4a3: {
+  Mundelsheim_ca09c6b7: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#50FFDF',
+    color: '#CECBE9',
     added: '2020-01-01',
   },
-  Heilbronn_e024da79: {
+  Bad_Wimpfen_ca04619a: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#649AB9',
+    color: '#F4EFA0',
     added: '2020-01-01',
   },
-  Heilbronn_99556945: {
+  Mosbach_bdca7800: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#E4E5A6',
+    color: '#CEEA17',
     added: '2020-01-01',
   },
-  Heilbronn_2a8107d5: {
+  Heilbronn_71b0b9a1: {
     description: '',
     rating: 5,
     location: 'Germany',
-    color: '#54672F',
-    added: '2020-01-01',
-  },
-  Heilbronn_e627f197: {
-    description: '',
-    rating: 5,
-    location: 'Germany',
-    color: '#E89286',
-    added: '2020-01-01',
-  },
-  Heilbronn_3cacab6e: {
-    description: '',
-    rating: 5,
-    location: 'Germany',
-    color: '#D23FC1',
+    color: '#0CC22F',
     added: '2020-01-01',
   },
 }

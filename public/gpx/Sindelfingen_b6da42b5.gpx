@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="gpx.py -- https://github.com/tkrajina/gpxpy">
+  <metadata>
+    <name>Sindelfingen_b6da42b5</name>
+  </metadata>
+  <trk>
+    <name>Sindelfingen_b6da42b5</name>
+    <trkseg>
+      <trkpt lat="48.725605" lon="8.96377">
+        <ele>472</ele>
+        <time>2000-01-01T00:00:00Z</time>
+      </trkpt>
+      <trkpt lat="48.727135" lon="8.963972">
+        <ele>473.5</ele>
+        <time>2000-01-01T00:01:08Z</time>
+      </trkpt>
+      <trkpt lat="48.72604" lon="8.963702">
+        <ele>474.2</ele>
+        <time>2000-01-01T00:01:41Z</time>
+      </trkpt>
+      <trkpt lat="48.72615" lon="8.96255">
+        <ele>472.2</ele>
+        <time>2000-01-01T00:02:06Z</time>
+      </trkpt>
+      <trkpt lat="48.725468" lon="8.961884">
+        <ele>470.1</ele>
+        <time>2000-01-01T00:02:32Z</time>
+      </trkpt>
+      <trkpt lat="48.725315" lon="8.96355">
+        <ele>470.1</ele>
+        <time>2000-01-01T00:02:55Z</time>
+      </trkpt>
+      <trkpt lat="48.725929" lon="8.963646">
+        <ele>470.1</ele>
+        <time>2000-01-01T00:03:18Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
