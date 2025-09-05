@@ -1,63 +1,69 @@
 {
-  "name": "routes",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "type-check": "./node_modules/.bin/tsc"
-  },
-  "dependencies": {
-    "@mapbox/polyline": "^1.1.1",
-    "@mapbox/togeojson": "^0.16.0",
-    "@turf/length": "^6.3.0",
-    "@types/gtag.js": "^0.0.4",
-    "canvas": "^2.7.0",
-    "clsx": "^1.1.1",
-    "framer-motion": "^4.0.3",
-    "geojson-precision": "^1.0.0",
-    "geojson-vt": "^3.2.1",
-    "jimp": "^0.16.1",
-    "mapbox-gl": "^2.3.0",
-    "next": "12.0.8",
-    "next-seo": "^4.24.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-vis": "^1.11.7",
-    "simplify-geojson": "^1.0.4",
-    "turf-extent": "^1.0.4",
-    "worker-loader": "^3.0.8",
-    "xmldom": "^0.5.0"
-  },
-  "devDependencies": {
-    "@tailwindcss/jit": "^0.1.8",
-    "@types/node": "^17.0.10",
-    "@types/react": "17.0.38",
-    "@typescript-eslint/eslint-plugin": "^4.19.0",
-    "@typescript-eslint/parser": "^4.19.0",
-    "autoprefixer": "^10.4.2",
-    "eslint": "^7.22.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-prettier": "^8.1.0",
-    "eslint-import-resolver-typescript": "^2.4.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react": "^7.23.1",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "lint-staged": ">=10",
-    "postcss": "^8.4.5",
-    "prettier": "2.2.1",
-    "simple-git-hooks": ">=2.0.3",
-    "tailwindcss": "^3.0.15",
-    "typescript": "^4.2.3"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "npx lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,ts,tsx}": "eslint --cache --fix",
-    "*.{js,ts,tsx,css,md}": "prettier --write"
-  }
+    "name": "routes",
+    "version": "0.1.0",
+    "private": true,
+    "engines": {
+        "node": ">=22 <23"
+    },
+    "volta": {
+        "node": "22.11.0"
+    },
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "type-check": "./node_modules/.bin/tsc"
+    },
+    "dependencies": {
+        "@mapbox/polyline": "^1.1.1",
+        "@mapbox/togeojson": "^0.16.0",
+        "@turf/length": "^6.3.0",
+        "@types/gtag.js": "^0.0.4",
+        "canvas": "^2.7.0",
+        "clsx": "^1.1.1",
+        "framer-motion": "^4.0.3",
+        "geojson-precision": "^1.0.0",
+        "geojson-vt": "^3.2.1",
+        "jimp": "^0.16.1",
+        "mapbox-gl": "^2.3.0",
+        "next": "12.0.8",
+        "next-seo": "^4.24.0",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "react-vis": "^1.11.7",
+        "simplify-geojson": "^1.0.4",
+        "turf-extent": "^1.0.4",
+        "worker-loader": "^3.0.8",
+        "xmldom": "^0.5.0"
+    },
+    "devDependencies": {
+        "@tailwindcss/jit": "^0.1.8",
+        "@types/node": "^22.0.0",
+        "@types/react": "17.0.38",
+        "@typescript-eslint/eslint-plugin": "^4.19.0",
+        "@typescript-eslint/parser": "^4.19.0",
+        "autoprefixer": "^10.4.2",
+        "eslint": "^7.22.0",
+        "eslint-config-airbnb": "^18.2.1",
+        "eslint-config-prettier": "^8.1.0",
+        "eslint-import-resolver-typescript": "^2.4.0",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-jsx-a11y": "^6.4.1",
+        "eslint-plugin-prettier": "^3.3.1",
+        "eslint-plugin-react": "^7.23.1",
+        "eslint-plugin-react-hooks": "^4.2.0",
+        "lint-staged": ">=10",
+        "postcss": "^8.4.5",
+        "prettier": "2.2.1",
+        "simple-git-hooks": ">=2.0.3",
+        "tailwindcss": "^3.0.15",
+        "typescript": "^4.2.3"
+    },
+    "simple-git-hooks": {
+        "pre-commit": "npx lint-staged"
+    },
+    "lint-staged": {
+        "*.{js,ts,tsx}": "eslint --cache --fix",
+        "*.{js,ts,tsx,css,md}": "prettier --write"
+    }
 }
