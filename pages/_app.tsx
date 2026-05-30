@@ -7,6 +7,7 @@ import SEO from 'components/seo'
 import * as gtag from 'lib/gtag'
 import '../styles/globals.css'
 import MapBox from 'components/mapbox'
+import { HoverProvider } from 'context/hover'
 
 // Hooks
 import { useIsSmall } from 'utils/hooks'
@@ -35,7 +36,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   }, [router])
 
   return (
-    <>
+    <HoverProvider>
       <SEO />
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -58,7 +59,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
           </div>
         )}
       </main>
-    </>
+    </HoverProvider>
   )
 }
 

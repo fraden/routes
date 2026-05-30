@@ -4,6 +4,7 @@ import MapboxWorker from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker' // 
 import { useRouter } from 'next/router'
 import extent from 'turf-extent'
 import type { Routes } from 'types'
+import { useHover } from 'context/hover'
 
 mapboxgl.workerClass = MapboxWorker
 mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN
@@ -13,7 +14,6 @@ type MapBoxProps = {
   mergedGeoJson?: { type: string; features: any[] }
   initialLat?: number
   initialLng?: number
-  hoveredPoint?: { lat: number; lng: number } | null
 }
 
 const DEFAULT_LNG = 10.275971
@@ -25,8 +25,8 @@ const MapBox = ({
   mergedGeoJson: mergedGeoJsonProp,
   initialLng = DEFAULT_LNG,
   initialLat = DEFAULT_LAT,
-  hoveredPoint,
 }: MapBoxProps): JSX.Element => {
+  const { hoveredPoint } = useHover()
   const mergedGeoJson = mergedGeoJsonProp ?? {
     type: 'FeatureCollection',
     features: routes.flatMap(route =>
