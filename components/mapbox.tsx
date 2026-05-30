@@ -98,14 +98,17 @@ const MapBox = ({
       )
 
       // Single merged source — replaces 311 individual sources
-      map.addSource('all-routes', { type: 'geojson', data: mergedGeoJson })
+      map.addSource('all-routes', { type: 'geojson', data: mergedGeoJson, promoteId: 'slug' })
 
       map.addLayer({
         id: 'all-routes-line',
         type: 'line',
         source: 'all-routes',
         layout: { 'line-join': 'round', 'line-cap': 'round' },
-        paint: { 'line-color': ['get', 'color'], 'line-width': 4 },
+        paint: {
+          'line-color': ['get', 'color'],
+          'line-width': ['case', ['boolean', ['feature-state', 'hover'], false], 6, 4],
+        },
       })
       map.addLayer({
         id: 'all-routes-fill',
@@ -141,14 +144,25 @@ const MapBox = ({
         router.push(`/${slug}`)
       })
 
-      map.on('mouseenter', 'all-routes-fill', () => {
+      let hoveredSlug: string | null = null
+
+      map.on('mousemove', 'all-routes-fill', e => {
         map.getCanvas().style.cursor = 'pointer'
-        map.setPaintProperty('all-routes-line', 'line-width', 6)
+        const { slug } = e.features[0].properties
+        if (slug === hoveredSlug) return
+        if (hoveredSlug) {
+          map.setFeatureState({ source: 'all-routes', id: hoveredSlug }, { hover: false })
+        }
+        hoveredSlug = slug
+        map.setFeatureState({ source: 'all-routes', id: slug }, { hover: true })
       })
 
       map.on('mouseleave', 'all-routes-fill', () => {
         map.getCanvas().style.cursor = ''
-        map.setPaintProperty('all-routes-line', 'line-width', 4)
+        if (hoveredSlug) {
+          map.setFeatureState({ source: 'all-routes', id: hoveredSlug }, { hover: false })
+          hoveredSlug = null
+        }
       })
 
       setStateMap(map)
