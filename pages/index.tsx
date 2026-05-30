@@ -5,19 +5,26 @@ import Link from 'next/link'
 // Components
 import Route from 'components/route'
 import Select from 'components/select'
+import BottomSheet from 'components/bottom-sheet'
+import MapBox from 'components/mapbox'
 
 // Types
 import type { Routes } from 'types'
+
+// Hooks
+import { useIsSmall } from 'utils/hooks'
 
 // Data
 const gpxUtils = require('../utils/gpxutils.js')
 
 type RoutesProps = {
   routes: Routes
+  mergedGeoJson: { type: string; features: any[] }
 }
 
-const Home = ({ routes }: RoutesProps) => {
+const Home = ({ routes, mergedGeoJson }: RoutesProps) => {
   const [sorting, setSorting] = useState('added')
+  const isSmall = useIsSmall()
   const randomRoute = routes[Math.floor(Math.random() * routes.length)]
 
   const sortRoutes = (a, b) => {
@@ -35,8 +42,8 @@ const Home = ({ routes }: RoutesProps) => {
     }
   }
 
-  return (
-    <div className="pt-3">
+  const listContent = (
+    <>
       <header className="py-16 text-center">
         <img src="/logo.svg" alt="Trail Router logotype" className="mx-auto mb-3" />
         <p className="text-forest-darkest">
@@ -94,8 +101,23 @@ const Home = ({ routes }: RoutesProps) => {
           Dennis Frankenbach
         </a>
       </footer>
-    </div>
+    </>
   )
+
+  if (!isSmall) {
+    return (
+      <div className="relative overflow-hidden" style={{ height: '100dvh' }}>
+        <div className="absolute inset-0">
+          <MapBox routes={routes} mergedGeoJson={mergedGeoJson} />
+        </div>
+        <BottomSheet collapsedHeight={80}>
+          <div className="pt-3">{listContent}</div>
+        </BottomSheet>
+      </div>
+    )
+  }
+
+  return <div className="pt-3">{listContent}</div>
 }
 
 export const getStaticProps: GetStaticProps = async () => {
