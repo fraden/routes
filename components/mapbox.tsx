@@ -3,52 +3,60 @@ import mapboxgl from 'mapbox-gl/dist/mapbox-gl-csp'
 import MapboxWorker from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker' // eslint-disable-line
 import { useRouter } from 'next/router'
 import extent from 'turf-extent'
-import type { Route, Routes } from 'types'
+import type { Routes } from 'types'
 
 mapboxgl.workerClass = MapboxWorker
 mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN
 
 type MapBoxProps = {
   routes: Routes
+  mergedGeoJson?: { type: string; features: any[] }
   initialLat?: number
   initialLng?: number
+  hoveredPoint?: { lat: number; lng: number } | null
 }
 
-// Initial map
-// TODO: Fit to bounds of all routes
-const lng = 10.275971
-const lat = 49.468342
-const zoom = 6
+const DEFAULT_LNG = 10.275971
+const DEFAULT_LAT = 49.468342
+const DEFAULT_ZOOM = 6
 
-const MapBox = ({ routes, initialLng = lng, initialLat = lat }: MapBoxProps): JSX.Element => {
-  const [stateMap, setStateMap] = useState(null)
-  const mapContainer = useRef()
-
+const MapBox = ({
+  routes,
+  mergedGeoJson: mergedGeoJsonProp,
+  initialLng = DEFAULT_LNG,
+  initialLat = DEFAULT_LAT,
+  hoveredPoint,
+}: MapBoxProps): JSX.Element => {
+  const mergedGeoJson = mergedGeoJsonProp ?? {
+    type: 'FeatureCollection',
+    features: routes.flatMap(route =>
+      route.geoJson.features.map((f: any) => ({
+        ...f,
+        properties: { ...f.properties, slug: route.slug, color: route.color },
+      })),
+    ),
+  }
+  const [stateMap, setStateMap] = useState<any>(null)
+  const mapContainer = useRef<any>()
+  const hoverMarkerRef = useRef<any>(null)
   const router = useRouter()
-  const queryRoute = router.query.slug
+  const queryRoute = router.query.slug as string | undefined
 
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: mapContainer.current,
       style: 'mapbox://styles/mapbox/outdoors-v11',
       center: [initialLng, initialLat],
-      zoom,
+      zoom: DEFAULT_ZOOM,
     })
 
-    // Add zoom/rotate control to the map
     map.addControl(new mapboxgl.NavigationControl())
-
-    // Add geolocate control to the map.
     map.addControl(
       new mapboxgl.GeolocateControl({
-        positionOptions: {
-          enableHighAccuracy: true,
-        },
+        positionOptions: { enableHighAccuracy: true },
         trackUserLocation: true,
       }),
     )
-
-    // Add fullscreen control to the map
     map.addControl(new mapboxgl.FullscreenControl())
 
     map.on('load', () => {
@@ -58,10 +66,7 @@ const MapBox = ({ routes, initialLng = lng, initialLat = lat }: MapBoxProps): JS
         tileSize: 512,
         maxzoom: 14,
       })
-      // add the DEM source as a terrain layer with exaggerated height
       map.setTerrain({ source: 'mapbox-dem', exaggeration: 1.5 })
-
-      // add a sky layer that will show when the map is highly pitched
       map.addLayer({
         id: 'sky',
         type: 'sky',
@@ -74,7 +79,6 @@ const MapBox = ({ routes, initialLng = lng, initialLat = lat }: MapBoxProps): JS
 
       const { layers } = map.getStyle()
       const labelLayerId = layers.find(layer => layer.type === 'symbol' && layer.layout['text-field']).id
-
       map.addLayer(
         {
           id: 'add-3d-buildings',
@@ -85,10 +89,6 @@ const MapBox = ({ routes, initialLng = lng, initialLat = lat }: MapBoxProps): JS
           minzoom: 15,
           paint: {
             'fill-extrusion-color': '#aaa',
-
-            // Use an 'interpolate' expression to
-            // add a smooth transition effect to
-            // the buildings as the user zooms in.
             'fill-extrusion-height': ['interpolate', ['linear'], ['zoom'], 15, 0, 15.05, ['get', 'height']],
             'fill-extrusion-base': ['interpolate', ['linear'], ['zoom'], 15, 0, 15.05, ['get', 'min_height']],
             'fill-extrusion-opacity': 0.6,
@@ -96,115 +96,59 @@ const MapBox = ({ routes, initialLng = lng, initialLat = lat }: MapBoxProps): JS
         },
         labelLayerId,
       )
-      routes.forEach((route: Route) => {
-        const {
-          slug,
-          color,
-          geoJson: { features },
-        } = route
-        const { coordinates: startCoordinates } = features[0].geometry
-        const { coordinates: endCoordinates } = features[features.length - 1].geometry
-        const isCollection = features.length > 1
-        const bbox = extent(route.geoJson)
 
-        const dash = isCollection && queryRoute ? { 'line-dasharray': ['get', 'dash'] } : {}
+      // Single merged source — replaces 311 individual sources
+      map.addSource('all-routes', { type: 'geojson', data: mergedGeoJson })
 
-        map.addSource(slug, {
-          type: 'geojson',
-          data: route.geoJson,
-        })
-        // Our path/route
-        map.addLayer({
-          id: slug,
-          type: 'line',
-          source: slug,
-          layout: {
-            'line-join': 'round',
-            'line-cap': 'round',
-          },
-          paint: {
-            'line-color': color,
-            'line-width': 4,
-            ...dash,
-          },
-        })
-        // Add a fill layer as source for hover, or we lose our click target when inside the path
-        map.addLayer({
-          id: `${slug}-fill`,
-          type: 'fill',
-          source: slug,
-          paint: {
-            'fill-color': 'transparent',
-            'fill-outline-color': 'transparent',
-          },
-        })
+      map.addLayer({
+        id: 'all-routes-line',
+        type: 'line',
+        source: 'all-routes',
+        layout: { 'line-join': 'round', 'line-cap': 'round' },
+        paint: { 'line-color': ['get', 'color'], 'line-width': 4 },
+      })
+      map.addLayer({
+        id: 'all-routes-fill',
+        type: 'fill',
+        source: 'all-routes',
+        paint: { 'fill-color': 'transparent', 'fill-outline-color': 'transparent' },
+      })
 
-        map.addLayer({
-          id: `${slug}-start`,
-          type: 'circle',
-          source: {
-            type: 'geojson',
-            data: {
-              type: 'Feature',
-              properties: {
-                description: 'Activity Start',
-              },
-              geometry: {
-                type: 'Point',
-                coordinates: startCoordinates[0],
-              },
-            },
-          },
-          paint: {
-            'circle-color': '#87CF3E',
-            'circle-radius': 5,
-            'circle-opacity': 1,
-          },
-        })
+      // Start/end dot sources (empty by default, populated on detail page)
+      map.addSource('active-start', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } })
+      map.addLayer({
+        id: 'active-start',
+        type: 'circle',
+        source: 'active-start',
+        paint: { 'circle-color': '#87CF3E', 'circle-radius': 5, 'circle-opacity': 1 },
+      })
 
-        map.addLayer({
-          id: `${slug}-end`,
-          type: 'circle',
-          source: {
-            type: 'geojson',
-            data: {
-              type: 'Feature',
-              properties: {
-                description: 'Activitiy End',
-              },
-              geometry: {
-                type: 'Point',
-                coordinates: endCoordinates.pop(),
-              },
-            },
-          },
-          paint: {
-            'circle-color': 'red',
-            'circle-radius': 5,
-            'circle-opacity': 1,
-          },
-        })
+      map.addSource('active-end', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } })
+      map.addLayer({
+        id: 'active-end',
+        type: 'circle',
+        source: 'active-end',
+        paint: { 'circle-color': 'red', 'circle-radius': 5, 'circle-opacity': 1 },
+      })
 
-        map.on('click', `${slug}-fill`, () => {
-          // Fit map to bounds/route
-          map.fitBounds(bbox, {
-            padding: 20,
-          })
+      map.on('click', 'all-routes-fill', e => {
+        const { slug } = e.features[0].properties
+        const route = routes.find(r => r.slug === slug)
+        if (route) {
+          const bbox = extent(route.geoJson)
+          map.fitBounds(bbox, { padding: 20 })
+        }
+        router.push(`/${slug}`)
+      })
 
-          router.push(`/${slug}`)
-        })
+      map.on('mouseenter', 'all-routes-fill', () => {
+        map.getCanvas().style.cursor = 'pointer'
+        map.setPaintProperty('all-routes-line', 'line-width', 6)
+      })
 
-        map.on('mouseenter', `${slug}-fill`, () => {
-          // Change the cursor style as a UI indicator.
-          map.getCanvas().style.cursor = 'pointer'
-          // Increase width of route path
-          map.setPaintProperty(slug, 'line-width', 6)
-        })
-
-        map.on('mouseleave', `${slug}-fill`, () => {
-          map.getCanvas().style.cursor = ''
-          map.setPaintProperty(slug, 'line-width', 4)
-        })
+      map.on('mouseleave', 'all-routes-fill', () => {
+        map.getCanvas().style.cursor = ''
+        map.setPaintProperty('all-routes-line', 'line-width', 4)
       })
 
       setStateMap(map)
@@ -213,63 +157,56 @@ const MapBox = ({ routes, initialLng = lng, initialLat = lat }: MapBoxProps): JS
     return () => map.remove()
   }, [])
 
+  // Filter to active route or show all
   useEffect(() => {
-    if (queryRoute && stateMap) {
-      routes.forEach((route: Route) => {
-        const {
-          slug,
-          geoJson: { features },
-        } = route
-        const isCollection = features.length > 1
+    if (!stateMap) return
 
-        if (slug === queryRoute) {
-          stateMap.setLayoutProperty(slug, 'visibility', 'visible')
-          stateMap.setLayoutProperty(`${slug}-fill`, 'visibility', 'visible')
-          stateMap.setLayoutProperty(`${slug}-end`, 'visibility', 'visible')
-          stateMap.setLayoutProperty(`${slug}-start`, 'visibility', 'visible')
-          if (isCollection) {
-            stateMap.setPaintProperty(slug, 'line-dasharray', ['get', 'dash'])
-          }
+    if (queryRoute) {
+      const route = routes.find(r => r.slug === queryRoute)
+      stateMap.setFilter('all-routes-line', ['==', ['get', 'slug'], queryRoute])
+      stateMap.setFilter('all-routes-fill', ['==', ['get', 'slug'], queryRoute])
 
-          const bbox = extent(route.geoJson)
-          // Fit map to bounds/route
-          stateMap.fitBounds(bbox, {
-            padding: 20,
-          })
-        } else {
-          stateMap.setLayoutProperty(slug, 'visibility', 'none')
-          stateMap.setLayoutProperty(`${slug}-fill`, 'visibility', 'none')
-          stateMap.setLayoutProperty(`${slug}-end`, 'visibility', 'none')
-          stateMap.setLayoutProperty(`${slug}-start`, 'visibility', 'none')
-          if (isCollection) {
-            stateMap.setPaintProperty(slug, 'line-dasharray', null)
-          }
-        }
-      })
+      if (route) {
+        const bbox = extent(route.geoJson)
+        stateMap.fitBounds(bbox, { padding: 20 })
+
+        const coords = route.geoJson.features[0].geometry.coordinates
+        const startCoord = Array.isArray(coords[0][0]) ? coords[0][0] : coords[0]
+        const lastSegment = Array.isArray(coords[coords.length - 1][0]) ? coords[coords.length - 1] : coords
+        const endCoord = lastSegment[lastSegment.length - 1]
+
+        stateMap.getSource('active-start').setData({
+          type: 'FeatureCollection',
+          features: [{ type: 'Feature', geometry: { type: 'Point', coordinates: startCoord }, properties: {} }],
+        })
+        stateMap.getSource('active-end').setData({
+          type: 'FeatureCollection',
+          features: [{ type: 'Feature', geometry: { type: 'Point', coordinates: endCoord }, properties: {} }],
+        })
+      }
     } else {
-      routes.forEach((route: Route) => {
-        const {
-          slug,
-          geoJson: { features },
-        } = route
-        const isCollection = features.length > 1
-        if (stateMap) {
-          stateMap.setLayoutProperty(slug, 'visibility', 'visible')
-          stateMap.setLayoutProperty(`${slug}-fill`, 'visibility', 'visible')
-          stateMap.setLayoutProperty(`${slug}-end`, 'visibility', 'none')
-          stateMap.setLayoutProperty(`${slug}-start`, 'visibility', 'none')
-          if (isCollection) {
-            stateMap.setPaintProperty(slug, 'line-dasharray', null)
-          }
-          stateMap.flyTo({
-            center: [lng, lat],
-            essential: true,
-            zoom,
-          })
-        }
-      })
+      stateMap.setFilter('all-routes-line', null)
+      stateMap.setFilter('all-routes-fill', null)
+      stateMap.getSource('active-start').setData({ type: 'FeatureCollection', features: [] })
+      stateMap.getSource('active-end').setData({ type: 'FeatureCollection', features: [] })
+      stateMap.flyTo({ center: [DEFAULT_LNG, DEFAULT_LAT], essential: true, zoom: DEFAULT_ZOOM })
     }
   }, [queryRoute, stateMap])
+
+  // Hover marker — orange dot synced to chart position
+  useEffect(() => {
+    if (!stateMap) return
+    if (!hoveredPoint) {
+      hoverMarkerRef.current?.remove()
+      return
+    }
+    if (!hoverMarkerRef.current) {
+      const el = document.createElement('div')
+      el.className = 'hover-marker'
+      hoverMarkerRef.current = new mapboxgl.Marker(el)
+    }
+    hoverMarkerRef.current.setLngLat([hoveredPoint.lng, hoveredPoint.lat]).addTo(stateMap)
+  }, [hoveredPoint, stateMap])
 
   return <div className="absolute inset-0" ref={mapContainer} />
 }

@@ -54,4 +54,14 @@ const routes = routeFilePaths.map(filePath => {
   }
 })
 
-module.exports = { routes }
+const mergedGeoJson = {
+  type: 'FeatureCollection',
+  features: routes.flatMap(route =>
+    route.geoJson.features.map(f => ({
+      ...f,
+      properties: { ...f.properties, slug: route.slug, color: route.color },
+    })),
+  ),
+}
+
+module.exports = { routes, mergedGeoJson }

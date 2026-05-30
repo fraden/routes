@@ -49,7 +49,12 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
         </aside>
         {isSmall && (
           <div className="block text-xl text-forest ml-[430px] h-screen relative w-full">
-            <MapBox routes={pageProps.routes} initialLat={pageProps.initialLat} initialLng={pageProps.initialLng} />
+            <MapBox
+              routes={pageProps.routes}
+              mergedGeoJson={pageProps.mergedGeoJson}
+              initialLat={pageProps.initialLat}
+              initialLng={pageProps.initialLng}
+            />
           </div>
         )}
       </main>

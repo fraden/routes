@@ -197,7 +197,8 @@ export const getStaticProps: GetStaticProps = async context => {
     props: {
       initialLat: route.gpxGeoJson.features[0].geometry.coordinates[0][1],
       initialLng: route.gpxGeoJson.features[0].geometry.coordinates[0][0],
-      routes: gpxUtils.routes, // Todo: only send the current route - refactor mapbox component to support adding/removing routes
+      routes: gpxUtils.routes,
+      mergedGeoJson: gpxUtils.mergedGeoJson,
     },
   }
 }

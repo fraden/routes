@@ -102,6 +102,7 @@ export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
       routes: gpxUtils.routes.sort((a, b) => new Date(b.added).valueOf() - new Date(a.added).valueOf()),
+      mergedGeoJson: gpxUtils.mergedGeoJson,
     },
   }
 }
