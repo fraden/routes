@@ -24,7 +24,7 @@ const Route = ({ route: { geoJson, distance, elevation, slug, color, swimrun } }
   const { name } = geoJson.features[0].properties
   return (
     <Link href={`/${slug}`} key={name}>
-      <a className="relative block p-4 mb-5 transition border border-gray-200 rounded hover:border-gray-300">
+      <a className="relative block p-4 mb-4 transition-all border border-gray-200 rounded-xl hover:border-gray-300 hover:shadow-sm">
         <p className="font-semibold text-xl mb-1.5 text-forest-darkest">
           {swimrun ? (
             <svg
@@ -43,7 +43,7 @@ const Route = ({ route: { geoJson, distance, elevation, slug, color, swimrun } }
               />
             </svg>
           ) : (
-            <span style={{ backgroundColor: color, content: '' }} className="inline-block w-[14px] h-[14px] rounded-full mr-3" />
+            <span style={{ backgroundColor: color, content: '' }} className="inline-block w-[16px] h-[16px] rounded-full mr-3 -mb-0.5" />
           )}
           {name}
         </p>
