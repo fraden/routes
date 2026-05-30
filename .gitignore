@@ -34,3 +34,8 @@ yarn-error.log*
 # vercel
 .vercel
 .eslintcache
+
+# IDE / tools
+.idea/
+.vscode/
+.superpowers/
