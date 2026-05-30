@@ -18,6 +18,13 @@ if [ -z "$PYTHON_KOMOOT_PATH" ]; then
   exit 1
 fi
 
+for var in KOMOOT_EMAIL KOMOOT_PW KOMOOT_USERID; do
+  if [ -z "${!var}" ]; then
+    echo "Error: $var not set in .env"
+    exit 1
+  fi
+done
+
 PYTHON_DIR="$PYTHON_KOMOOT_PATH"
 OUT_DIR="$PYTHON_DIR/out"
 
@@ -30,7 +37,13 @@ KOMOOTEMAIL="$KOMOOT_EMAIL" \
   python src/main.py
 
 echo "→ Syncing GPX files (new files only)..."
-rsync -av --ignore-existing "$OUT_DIR"/*.gpx "$ROOT_DIR/public/gpx/"
+shopt -s nullglob
+gpx_files=("$OUT_DIR"/*.gpx)
+if [ ${#gpx_files[@]} -eq 0 ]; then
+  echo "  No GPX files found in $OUT_DIR"
+else
+  rsync -av --ignore-existing "${gpx_files[@]}" "$ROOT_DIR/public/gpx/"
+fi
 
 echo "→ Syncing meta.js..."
 if [ -f "$OUT_DIR/meta.js" ]; then
