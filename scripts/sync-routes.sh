@@ -32,6 +32,9 @@ echo "→ Clearing existing GPX files and meta.js..."
 rm -f "$ROOT_DIR/public/gpx/"*.gpx
 rm -f "$ROOT_DIR/data/meta.js"
 
+echo "→ Clearing python output directory..."
+rm -f "$OUT_DIR"/*.gpx "$OUT_DIR/meta.js"
+
 echo "→ Running komoot GPX creator..."
 cd "$PYTHON_DIR"
 KOMOOTEMAIL="$KOMOOT_EMAIL" \
