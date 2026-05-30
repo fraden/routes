@@ -28,6 +28,10 @@ done
 PYTHON_DIR="$PYTHON_KOMOOT_PATH"
 OUT_DIR="$PYTHON_DIR/out"
 
+echo "→ Clearing existing GPX files and meta.js..."
+rm -f "$ROOT_DIR/public/gpx/"*.gpx
+rm -f "$ROOT_DIR/data/meta.js"
+
 echo "→ Running komoot GPX creator..."
 cd "$PYTHON_DIR"
 KOMOOTEMAIL="$KOMOOT_EMAIL" \
@@ -36,13 +40,13 @@ KOMOOTEMAIL="$KOMOOT_EMAIL" \
   SHOW_REAL_DATES="$KOMOOT_SHOW_REAL_DATES" \
   python src/main.py
 
-echo "→ Syncing GPX files (new files only)..."
+echo "→ Copying GPX files..."
 shopt -s nullglob
 gpx_files=("$OUT_DIR"/*.gpx)
 if [ ${#gpx_files[@]} -eq 0 ]; then
   echo "  No GPX files found in $OUT_DIR"
 else
-  rsync -av --ignore-existing "${gpx_files[@]}" "$ROOT_DIR/public/gpx/"
+  rsync -av "${gpx_files[@]}" "$ROOT_DIR/public/gpx/"
 fi
 
 echo "→ Syncing meta.js..."
