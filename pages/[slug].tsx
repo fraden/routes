@@ -23,7 +23,13 @@ import MapBox from 'components/mapbox'
 // Data
 const gpxUtils = require('../utils/gpxutils.js')
 
-const RoutePage = ({ routes }: { routes: Route[] }): JSX.Element | null => {
+const RoutePage = ({
+  routes,
+  mergedGeoJson,
+}: {
+  routes: Route[]
+  mergedGeoJson: { type: string; features: any[] }
+}): JSX.Element | null => {
   const router = useRouter()
   const route = routes.find(x => x.slug === router.query.slug)
   const isSmall = useIsSmall()
@@ -134,7 +140,7 @@ const RoutePage = ({ routes }: { routes: Route[] }): JSX.Element | null => {
           </header>
           {!isSmall && (
             <div className="block text-xl text-forest pb-[50%] relative -mx-5">
-              <MapBox routes={[route]} />
+              <MapBox routes={[route]} mergedGeoJson={mergedGeoJson} />
             </div>
           )}
           <div className="p-2 mb-2 border border-gray-200 rounded">
