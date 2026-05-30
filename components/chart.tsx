@@ -20,6 +20,7 @@ function haversineKm(coord1: number[], coord2: number[]): number {
 }
 
 function buildPoints(coordinates: number[][]): Point[] {
+  if (coordinates.length === 0) return []
   let cumulative = 0
   const points: Point[] = coordinates.map((coord, i) => {
     if (i > 0) cumulative += haversineKm(coordinates[i - 1], coord)
@@ -34,7 +35,7 @@ function buildPoints(coordinates: number[][]): Point[] {
   const totalDist = points[points.length - 1].distance
   return points.map(p => ({
     ...p,
-    distancePct: Math.round((p.distance / totalDist) * 1000) / 10,
+    distancePct: totalDist > 0 ? Math.round((p.distance / totalDist) * 1000) / 10 : 0,
   }))
 }
 
@@ -45,7 +46,7 @@ type ChartProps = {
   type: string
 }
 
-const Chart = ({ coordinates, type }: ChartProps): JSX.Element => {
+const Chart = ({ coordinates, type }: ChartProps): JSX.Element | null => {
   const { setHoveredPoint } = useHover()
   const [xMode, setXMode] = useState<'km' | 'pct'>(() => {
     if (typeof window !== 'undefined') {
@@ -63,7 +64,7 @@ const Chart = ({ coordinates, type }: ChartProps): JSX.Element => {
 
   const points = buildPoints(combinedCoords)
   const xKey = xMode === 'km' ? 'distance' : 'distancePct'
-  const totalDist = points[points.length - 1].distance
+  const totalDist = points.length > 0 ? points[points.length - 1].distance : 0
 
   const handleToggle = (mode: 'km' | 'pct') => {
     setXMode(mode)
@@ -82,6 +83,8 @@ const Chart = ({ coordinates, type }: ChartProps): JSX.Element => {
   )
 
   const handleMouseLeave = useCallback(() => setHoveredPoint(null), [setHoveredPoint])
+
+  if (points.length === 0) return null
 
   const elevMin = Math.min(...points.map(p => p.elevation))
   const elevMax = Math.max(...points.map(p => p.elevation))
