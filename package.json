@@ -12,7 +12,8 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "type-check": "./node_modules/.bin/tsc"
+        "type-check": "./node_modules/.bin/tsc",
+        "sync-routes": "bash scripts/sync-routes.sh"
     },
     "dependencies": {
         "@mapbox/polyline": "^1.1.1",
