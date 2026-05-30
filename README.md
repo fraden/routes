@@ -29,6 +29,34 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Routen synchronisieren
+
+GPX-Dateien und Metadaten werden über das Python-Tool [python-komoot-gpx-creator](https://github.com/fraden/python-komoot-gpx-creator) von Komoot bezogen.
+
+**Einmalig einrichten:**
+
+```bash
+cp .env.example .env
+```
+
+`.env` öffnen und ausfüllen:
+
+```
+KOMOOT_USERID=
+KOMOOT_EMAIL=
+KOMOOT_PW=
+KOMOOT_SHOW_REAL_DATES=0
+PYTHON_KOMOOT_PATH=/pfad/zum/python-komoot-gpx-creator
+```
+
+**Routen aktualisieren:**
+
+```bash
+yarn sync-routes
+```
+
+Das Script löscht die vorhandenen GPX-Dateien und `meta.js`, fetcht alle Touren von Komoot und kopiert die neuen Dateien ins Projekt.
+
 ## Troubleshooting
 
 If you get an error like `fatal error: 'vips/vips8' file not found` you need to install the `vips` package.
